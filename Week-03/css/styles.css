@@ -1,3 +1,7 @@
+* {
+  box-sizing: border-box;
+}
+
 body {
   font-family: 'Roboto', sans-serif;
   line-height: 23.44px;
@@ -22,6 +26,14 @@ h3 {
   text-transform: uppercase;
   color: #373867;
   margin: auto;
+}
+
+button {
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 19px;
+  border-radius: 5px;
+  color: #373867;
 }
 
 footer {
@@ -259,11 +271,12 @@ footer {
   margin-bottom: 17px;
 }
 
-.form-group label{
+.form-inputs label{
   display: inline-block;
 }
 
 .form-label {
+  display: inline-block;
   width: 190px;
   height: 55px;
   font-weight: 700;
@@ -275,15 +288,71 @@ footer {
 .form-input {
   width: 293px;
   height: 45px;
+  padding-left: 25px;
   border: 1px solid #373867;
   border-radius: 20px;
 }
 
 .form-input::placeholder {
-  padding-left: 25px;
   font-style: normal;
   font-weight: 700;
   font-size: 15px;
   line-height: 18px;
   color: rgba(55, 56, 103, 0.43);
+}
+
+.form-options label {
+  width: 95%;
+}
+
+.form-options input {
+  border: 1px solid #34636E;
+  margin-right: 33px;
+  transform: scale(1.6);
+}
+
+.form-options label + div {
+  margin-top: 32px;
+}
+
+.form-textarea textarea {
+  display: block;
+  width: 917px;
+  height: 174.76px;
+  padding-top: 10px;
+  padding-left: 16px;
+  border: 1px solid #E0E0E0;
+  border-radius: 4px;
+  resize: none;
+}
+
+.form-textarea textarea::placeholder {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 18px;
+  color: #373867;
+  opacity: 0.5;
+}
+
+.form-textarea .form-group .form-label {
+  height: 20px;
+  margin-top: 100px;
+  margin-bottom: 25px;
+}
+
+button[type="submit"] {
+  width: 178px;
+  height: 47px;
+  margin-right: 52px;
+  border: 0px;
+  border-radius: 5px;
+  background: #AACE9B;
+}
+
+button[type="reset"] {
+  width: 111px;
+  height: 46px;
+  border: 1px solid #373867;
+  background: #FFFFFF;
 }
