@@ -17,22 +17,22 @@
             <nav>
                 <ul>
                     <li class="navbar-item">
-                        <a href="" class="navbar-button is-primary">
+                        <a href="#" class="navbar-button is-primary">
                             Home
                         </a>
                     </li>
                     <li class="navbar-item">
-                        <a href="" class="navbar-button">
+                        <a href="#" class="navbar-button">
                             Sign up
                         </a>
                     </li>
                     <li class="navbar-item">
-                        <a href="" class="navbar-button">
+                        <a href="#" class="navbar-button">
                             Log in
                         </a>
                     </li>
                     <li class="navbar-item">
-                        <a href="" class="navbar-button">
+                        <a href="#" class="navbar-button">
                             Contact
                         </a>
                     </li>
@@ -93,62 +93,76 @@
                 </p>
                 <img src="img/two-people.png" alt="One man and one women holding dumbbells">
             </section>
-            <section class="">
+            <section class="second-section">
                 <img src="img/muscle-boy.png" alt="A man doing biceps while he's showing his body">
                 <h2>
                     How can we help you?
                 </h2>
-                <p class="">
-                    Turn reservation
-                </p>
-                <p class="">
-                    Membership managment
-                </p>
-                <p class="">
-                    Agent display
-                </p>
-                <p class="">
-                    Contact and suggestion form
-                </p>
+                <div>
+                    <div class="button">
+                        Turn reservation
+                    </div>
+                    <div class="button">
+                        Membership managment
+                    </div>
+                </div>
+                <div>
+                    <div class="button">
+                        Agent display
+                    </div>
+                    <div class="button">                
+                        Contact and suggestion form
+                    </div>
+                </div>
             </section>
-            <section>
+            <section class="third-section">
                 <h2>
                     Contact
                 </h2>
                 <img src="img/mail-icon.png" alt="">
                 <form action="" method="">
-                    <label for="name">
-                        Name
-                    </label>
-                    <input type="text" placeholder="Insert your name" name="name">
-                    <label for="surname">
-                        Surname
-                    </label>
-                    <input type="text" placeholder="Insert your surname" name="surname">
-                    <label for="email">
-                        E-mail
-                    </label>
-                    <input type="email" placeholder="Insert your e-mail" name="email">
-                    <label for="reason">
-                        Reason for contact
-                    </label>
-                    <input type="radio" name="reason" value="I want to make a query or suggestion">
-                    <label for="reason">
-                        I want to make a query or suggestion
-                    </label>
-                    <input type="radio" name="reason" value="I want to make a claim">
-                    <label for="reason">
-                        I want to make a claim
-                    </label>
-                    <input type="radio" name="reason" value="I want to know the memberships and costs">
-                    <label for="reason">
-                        I want to know the memberships and costs
-                    </label>
-                    <label for="message">
-                        Message
-                    </label>
-                    <textarea name="" id="" cols="50" rows="10" placeholder="Type your message here"
+                    <div class="form-group">
+                        <label for="name" class="form-label">
+                            Name
+                        </label>
+                        <input class="form-input" type="text" placeholder="Insert your name" name="name">
+                    </div>
+                    <div class="form-group">                        
+                        <label for="surname" class="form-label">
+                            Surname
+                        </label>
+                        <input class="form-input" type="text" placeholder="Insert your surname" name="surname">
+                    </div>
+                    <div class="form-group">                    
+                        <label for="email" class="form-label">
+                            E-mail
+                        </label>
+                        <input class="form-input" type="email" placeholder="Insert your e-mail" name="email">
+                    </div>
+                    <div class="form-group">                        
+                        <label for="reason" class="form-label">
+                            Reason for contact
+                        </label>
+                        <input class="input-radio" type="radio" name="reason" value="I want to make a query or suggestion">
+                        <label for="reason" class="form-label">
+                            I want to make a query or suggestion
+                        </label>
+                        <input type="radio" name="reason" value="I want to make a claim">
+                        <label for="reason" class="form-label">
+                            I want to make a claim
+                        </label>
+                        <input type="radio" name="reason" value="I want to know the memberships and costs">
+                        <label for="reason" class="form-label">
+                            I want to know the memberships and costs
+                        </label>
+                    </div>
+                    <div class="form-group">                        
+                        <label for="message" class="form-label">
+                            Message
+                        </label>
+                        <textarea name="" id="" cols="50" rows="10" placeholder="Type your message here"
                         name="message"></textarea>
+                    </div>
                     <button type="submit">
                         Send message
                     </button>
