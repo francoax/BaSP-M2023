@@ -1,6 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Week-03</title>
     <link rel="stylesheet" href="css/reset.css" type="text/css">
     <link rel="stylesheet" href="css/styles.css" type="text/css">
@@ -13,7 +16,7 @@
             </h1>
         </header>
         <aside class="sidebar">
-            <img id="rr-icon" src="img/rr-icon.jpg" alt="">
+            <img id="rr-icon" src="img/rr-icon.jpg" alt="Radium Rocket icon">
             <nav>
                 <ul>
                     <li class="navbar-item">
@@ -39,44 +42,44 @@
                 </ul>
             </nav>
             <section>
-                <h3>
+                <h2>
                     Other options
-                </h3>
+                </h2>
                 <ul>
                     <li>
-                        <a href="" class="">
+                        <a href="#" class="">
                             How can we help you ?
                         </a>
                     </li>
                     <li>
-                        <a href="" class="">
+                        <a href="#" class="">
                             Our history
                         </a>
                     </li>
                     <li>
-                        <a href="">
+                        <a href="#">
                             Activities
                         </a>
                     </li>
+                    <li>
+                        <a href="mailto:info@rocket.com" class="text-with-icon-right">
+                            <img src="img/mail-icon.png" alt="mail icon">
+                            <span>info@rocket.com</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://goo.gl/maps/ndFHtfb9EdZk9MvSA" target="_blank" class="text-with-icon-right">
+                            <img src="img/home-icon.png" alt="home icon">
+                            <span>Rosario, Argentina</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="tel:000000000" target="_blank" class="text-with-icon-right">
+                            <img src="img/whatsapp-icon.png" alt="whatsapp icon">
+                            <span>(000) 000-0000</span>
+                        </a>
+                    </li>
                 </ul>
-                <div>
-                    <img src="img/mail-icon.png" alt="">
-                    <a href="mailto:info@rocket.com">
-                        info@rocket.com
-                    </a>
-                </div>
-                <div>
-                    <img src="img/home-icon.png" alt="">
-                    <a href="https://goo.gl/maps/ndFHtfb9EdZk9MvSA" target="_blank">
-                        Rosario, Argentina
-                    </a>
-                </div>
-                <div>
-                    <img src="img/whatsapp-icon.png" alt="">
-                    <a href="https://web.whatsapp.com/" target="_blank">
-                        (000) 000-0000
-                    </a>
-                </div>
             </section>
         </aside>
         <main class="main-container">
@@ -85,11 +88,11 @@
                     The main reason of health
                 </h2>
                 <p>
-                    Component Body Maecenas interdum faucibus quam ac interdum. Donec facilisis vitae ipsum a ullamcorper. Proin interdum
-                    suscipit velit. Nullam pulvinar efficitur sapien ac rhoncus. Aenean scelerisque, nisi at interdum laoreet, est nisi
-                    sagittis enim, nec eleifend justo orci quis nisl. Morbi fringilla felis non ipsum dapibus, eget ornare tortor hendrerit.
-                    Curabitur ac eleifend orci. Donec condimentum ex non leo volutpat pretium. Cras aliquet quam quis semper egestas. Sed at
-                    ultricies turpis. Aenean cursus porta eleifend.
+                    Component Body Maecenas interdum faucibus quam ac interdum. Donec facilisis vitae ipsum a ullamcorper. Proin interdum su
+                    scipit velit. Nullam pulvinar efficitur sapien ac rhoncus. Aenean scelerisque, nisi at interdum laoreet, est nisi sagittis
+                    enim, nec eleifend justo orci quis nisl. Morbi fringilla felis non ipsum dapibus, eget ornare tortor hendrerit. Curabitur
+                    ac eleifend orci. Donec condimentum ex non leo volutpat pretium. Cras aliquet quam quis semper egestas. Sed at ultricies
+                    turpis. Aenean cursus porta eleifend.
                 </p>
                 <img src="img/two-people.png" alt="One man and one women holding dumbbells">
             </section>
@@ -120,45 +123,45 @@
                     Contact
                 </h2>
                 <img src="img/mail-icon.png" alt="">
-                <form action="" method="" class="form-contact">
+                <form class="form-contact">
                     <div class="form-inputs">
                         <div class="form-group">
                             <label for="name" class="form-label">
                                 Name
                             </label>
-                            <input class="form-input" type="text" placeholder="Insert your name" name="name">
+                            <input id="name" class="form-input" type="text" placeholder="Insert your name">
                         </div>
                         <div class="form-group">                        
                             <label for="surname" class="form-label">
                                 Surname
                             </label>
-                            <input class="form-input" type="text" placeholder="Insert your surname" name="surname">
+                            <input id="surname" class="form-input" type="text" placeholder="Insert your surname">
                         </div>
                         <div class="form-group">                    
                             <label for="email" class="form-label">
                                 E-mail
                             </label>
-                            <input class="form-input" type="email" placeholder="Insert your e-mail" name="email">
+                            <input id="email" class="form-input" type="email" placeholder="Insert your e-mail">
                         </div>                        
                     </div>
                     <div class="form-options">
                         <label for="reason" class="form-label">
                             Reason for contact
                         </label>
-                        <div >
-                            <input type="radio" name="reason" value="I want to make a query or suggestion">
+                        <div>
+                            <input id="reason" type="radio" value="I want to make a query or suggestion">
                             <label for="reason" class="form-label">
                                 I want to make a query or suggestion
                             </label>
                         </div>
                         <div>                        
-                            <input type="radio" name="reason" value="I want to make a claim">
+                            <input id="reason" type="radio" name="reason" value="I want to make a claim">
                             <label for="reason" class="form-label">
                                 I want to make a claim
                             </label>
                         </div>
                         <div>                            
-                            <input type="radio" name="reason" value="I want to know the memberships and costs">
+                            <input id="reason" type="radio" name="reason" value="I want to know the memberships and costs">
                             <label for="reason" class="form-label">
                                 I want to know the memberships and costs
                             </label>                        
@@ -169,7 +172,7 @@
                             <label for="message" class="form-label">
                                 Message
                             </label>
-                            <textarea name="" id="" cols="50" rows="10" placeholder="Type your message here" name="message"></textarea>
+                            <textarea name="" id="message" cols="50" rows="10" placeholder="Type your message here"></textarea>
                         </div>
                     </div>
                     <button type="submit">
@@ -180,81 +183,116 @@
                     </button>
                 </form>
             </section>
-            <section>
+            <section class="fourth-section">
                 <h2>
                     Our History
                 </h2>
                 <img src="img/muscle-girl.png" alt="A woman doing excersice at the gym">
                 <p>
-                    Quisque pellentesque lacus metus, sodales tempor leo tincidunt ut. Curabitur quis elit ut lectus
-                    vehicula rutrum eu at sem.
-                    Nam eget quam mi. Donec gravida metus ante, eget vulputate nibh posuere nec.
-                    Donec iaculis consequat neque at vulputate. Nulla tincidunt diam justo, eget facilisis nibh porttitor
-                    id.
-                    Suspendisse rhoncus elit non dapibus ullamcorper. Proin in tempor quam. Nulla in eros est.
+                    Quisque pellentesque lacus metus, sodales tempor leo tincidunt ut. Curabitur quis elit ut lectus vehicula rutrum eu at sem.
+                    Nam eget quam mi. Donec gravida metus ante, eget vulputate nibh posuere nec. Donec iaculis consequat neque at vulputate.
+                    Nulla tincidunt diam justo, eget facilisis nibh porttitor id. Suspendisse rhoncus elit non dapibus ullamcorper. Proin in
+                    tempor quam. Nulla in eros est.
                 </p>
             </section>
-            <section>
-                <h2>
-                    Activities
-                </h2>
-                <img src="img/barbell.png" alt="">
-                <p>
-                    Crossfit
-                </p>
-                <img src="img/muscle-arm.png" alt="">
-                <p>
-                    Fitness
-                </p>
-                <img src="img/spinning.png" alt="">
-                <p>
-                    Spinning
-                </p>
-                <img src="img/workmachine.png" alt="">
-                <p>
-                    Functional
-                </p>
-                <img src="img/box-hand.png" alt="">
-                <p>
-                    Box
-                </p>
-                <img src="img/shield.png" alt="">
-                <h3>
-                    Black membership
-                </h3>
-                <ul>
-                    <li>Free access to the weight room</li>
-                    <li>Free access to clases prior</li>
-                    <li>Registration</li>
-                    <li>Personalized monitoring by coach</li>
-                    <li>Grid display</li>
-                </ul>
-                <img src="img/flash.png" alt="">
-                <h3>
-                    Classis membership
-                </h3>
-                <ul>
-                    <li>Free access to the weight room</li>
-                    <li>Personalized monitoring by coach</li>
-                    <li>Grid display</li>
-                </ul>
-                <img src="img/heart.png" alt="">
-                <h3>
-                    Only classes membership
-                </h3>
-                <ul>
-                    <li>free access to the weight room</li>
-                    <li>Grid display</li>
-                </ul>
+            <section class="fifth-section">
+                <article class="activities">
+                    <h2>
+                        Activities
+                    </h2>
+                    <ul>
+                        <li class="crossfit">
+                            <img src="img/barbell.png" alt="Barbell" class="crossfit-img">
+                            <span>
+                                Crossfit
+                            </span>
+                        </li>
+                        <li class="fitness">
+                            <img src="img/muscle-arm.png" alt="Strong arm" class="fitness-img">
+                            <span>
+                                Fitness
+                            </span>
+                        </li>
+                        <li class="spinning">          
+                            <img src="img/spinning.png" alt="Treadmill" class="spinning-img">
+                            <span>
+                                Spinning
+                            </span>
+                        </li>
+                        <li class="functional">         
+                            <img src="img/workmachine.png" alt="Gym machine" class="functional-img">
+                            <span>
+                                Functional
+                            </span>
+                        </li>
+                        <li class="box">
+                            <img src="img/box-hand.png" alt="Boxin glove" class="box-img">
+                            <span>
+                                Box
+                            </span>
+                        </li>
+                    </ul>
+                </article>
+                <article class="membership">
+                    <h2>
+                        Membership Types
+                    </h2>
+                    <div class="black-ship">         
+                        <img src="img/shield.png" alt="Shield icon">
+                        <div class="ship-content">                            
+                            <h3>
+                                Black membership
+                            </h3>
+                            <ul>
+                                <li>Free access to the weight room</li>
+                                <li>Free access to clases prior</li>
+                                <li>Registration</li>
+                                <li>Personalized monitoring by coach</li>
+                                <li>Grid display</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="classic-ship">                        
+                        <img src="img/flash.png" alt="Flash icon">
+                        <div class="ship-content">                            
+                            <h3>
+                                Classis membership
+                            </h3>
+                            <ul>
+                                <li>Free access to the weight room</li>
+                                <li>Personalized monitoring by coach</li>
+                                <li>Grid display</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="only-ship">                        
+                        <img src="img/heart.png" alt="Hearth icon">
+                        <div class="ship-content">                            
+                            <h3>
+                                Only classes membership
+                            </h3>
+                            <ul>
+                                <li>Free access to the weight room</li>
+                                <li>Grid display</li>
+                            </ul>
+                        </div>
+                    </div>
+                </article>
             </section>
         </main>
-        <footer>
+        <footer class="footer">
             <p>
                 Copyright © 2022 Radium Rocket. All rights reserved.
             </p>
-            <img src="img/gmail-icon.png" alt="">
-            <img src="img/facebook-icon.png" alt="">
-            <img src="img/instagram-icon.png" alt="">
+            <a href="#">
+                <img src="img/gmail-icon.png" alt="gmail icon">
+            </a>
+            <a href="#">
+                <img src="img/facebook-icon.png" alt="facebook icon">
+            </a>
+            <a href="#">
+                <img src="img/instagram-icon.png" alt="instagram icon">
+            </a>
         </footer>
     </body>
 </html>
