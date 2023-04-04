@@ -54,19 +54,20 @@ button[type="reset"] {
 footer {
   position: relative;
   width: 80.49%;
-  left: 19.51%;
   height: 118px;
+  left: 19.51%;
+  margin-top: 66px;
   background-color: #373867;
 }
 
 footer p {
   display: inline-block;
+  margin-top: 49px;
+  margin-left: 58px;
   font-weight: 600;
   font-size: 20px;
   line-height: 23px;
   opacity: 0.5;
-  margin-top: 49px;
-  margin-left: 58px;
 }
 
 footer div {
@@ -221,18 +222,13 @@ main {
 main section {
   display: inline-block;
   width: 80.49%;
-  margin-bottom: 40px;
-  border-bottom: 5px solid #373867;
-}
-
-main section:last-child {
-  border-bottom: none;
 }
 
 .line-division {
   width: 1019px;
   height: 0px;
   margin-left: 27px;
+  margin-bottom: 45px;
   border-bottom: 5px solid #373867;
 }
 
@@ -242,7 +238,7 @@ main section:last-child {
 }
 
 .first-section h2 {
-  margin: 68px 0px 0px 0px;
+  margin-top: 68px;
 }
 
 .first-section p {
@@ -335,10 +331,6 @@ main section:last-child {
   margin-bottom: 17px;
 }
 
-.form-inputs label{
-  display: inline-block;
-}
-
 .form-label {
   display: inline-block;
   width: 190px;
@@ -368,14 +360,25 @@ main section:last-child {
   width: 95%;
 }
 
-.form-options input {
-  margin-right: 33px;
-  border: 1px solid #34636E;
-  transform: scale(1.6);
-}
-
 .form-options label + div {
   margin-top: 32px;
+}
+
+input[type="radio"] {
+  margin: 0;
+  margin-right: 33px;
+  width: 16px;
+  height: 16px;
+  border: 1px solid #34636E;
+  border-radius: 50%;
+  appearance: none;
+  background-color: #fff;
+  font: inherit;
+  color: currentColor;
+}
+
+input[type="radio"]:checked {
+  border: 4px solid #34636E;
 }
 
 .form-textarea textarea {
@@ -433,7 +436,7 @@ main section:last-child {
 
 .fifth-section article {
   display: inline-block;
-  width: 40%;
+  width: 50%;
 }
 
 .activities {
@@ -441,119 +444,53 @@ main section:last-child {
   float: left
 }
 
-.activities span {
+.activities>ul>li span {
+  position: relative;
   display: inline-block;
   font-weight: 700;
   font-size: 30px;
   line-height: 35px;
   color: #373867;
-}
-
-.activities>ul>li span {
-  position: relative;
   top: -40px;
 }
 
-.crossfit img {
-  margin-top: 25px;
-}
-
-.crossfit span {
-  margin-left: 80px;
-}
-
-.fitness {
-  margin-top: 31px;
-}
-
-.fitness span {
-  margin-left: 100px;
-}
-
-.spinning {
-  margin-top: 22px;
-}
-
-.spinning span {
-  margin-left: 98px;
-}
-
-.functional {
+.activity img {
   margin-top: 35px;
 }
 
-.functional span {
-  margin-left: 96px;
+.activity span {
+  margin-left: 95px;
 }
 
-.box {
-  margin-top: 32px;
-}
-
-.box span {
-  margin-left: 96px;
-}
-
-.membership h3 {
-  margin-bottom: 8px;
-}
-
-.membership h2,h3 {
+.memberships h2,h3 {
   color: #000;
 }
 
-.membership h3 {
+.memberships h3 {
+  margin-bottom: 8px;
   text-transform: lowercase;
   text-transform: capitalize;
-  font-weight: 700;
   font-size: 30px;
-  line-height: 35px;
 }
 
-.membership li {
+.memberships li {
   font-weight: 600;
   font-size: 20px;
   line-height: 23px;
   list-style-type: "-";
 }
 
+.ship-type {
+  margin-top: 41px;
+  margin-bottom: 110px;
+}
+
+.ship-type img {
+  position: relative;
+  top: -30px;
+}
+
 .ship-content {
   display: inline-block;
-  margin-left: 34px;
-}
-
-.black-ship {
-  margin-bottom: 106px;
-}
-
-.black-ship .ship-content {
-  position: relative;
-  top: 29px;
-}
-
-.black-ship img {
-  position: relative;
-  top: -40px;
-}
-
-.classic-ship {
-  margin-bottom: 131px;
-}
-
-.classic-ship .ship-content {
-  margin-left: 25px;
-}
-
-.classic-ship img {
-  position: relative;
-  top: -39px;
-}
-
-.only-ship img {
-  position: relative;
-  top: -23px;
-}
-
-.only-ship .ship-content {
-  margin-left: 31px;
+  margin-left: 40px;
 }
