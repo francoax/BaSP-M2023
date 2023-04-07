@@ -1,3 +1,8 @@
+.main {
+  display: flex;
+  flex-direction: column;
+}
+
 .health-info {
   display: flex;
   flex-direction: column;
@@ -7,6 +12,11 @@
 .health-info h2 {
   padding-top: 63px;
   font-size: 30px;
+}
+
+.health-info img {
+  width: 390px;
+  height: 330px;
 }
 
 .health-info P {
@@ -27,7 +37,13 @@
   align-items: center;
   height: 684px;
   margin-top: 69px;
-  background: url(../img/man-fit.jpg) no-repeat;
+  background-position: center;
+}
+
+.help-guide img {
+  position: absolute;
+  z-index: -1;
+  height: 684px;
 }
 
 .help-guide h2 {
@@ -40,3 +56,94 @@
   margin-top: 39px;
 }
 
+.contact {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 38px;
+}
+
+.contact .container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact-form {
+  margin-top: 35px;
+}
+
+.contact-form label {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-left: 35px;
+  margin-bottom: 15px;
+  color: #373867;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;;
+}
+
+.contact-form input {
+  margin-left: 24px;
+  margin-right: 33px;
+}
+
+.contact-reason {
+  display: flex;
+  flex-direction: column;
+  margin-top: 43px;
+}
+
+.contact-reason label:nth-of-type(1) {
+  margin-left: 35px;
+  margin-bottom: 29px;
+}
+
+.contact-reason label {
+  justify-content: flex-start;
+  margin-left: 0;
+  margin-bottom: 27px;
+}
+
+.contact-message textarea {
+  width: 330px;
+  height: 104px;
+  margin: 0px 30px;
+  resize: none;
+  border: 1px solid #E0E0E0;
+  border-radius: 4px;
+}
+
+.contact-message textarea::placeholder {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 18px;
+  opacity: 0.5;
+  padding: 10px 16px;
+  color: #373867;
+}
+
+.contact-form button {
+  height: 27px;
+  margin-left: 15px;
+  margin-top: 24px;
+  border-radius: 5px;
+  font-weight: 700;
+  font-size: 16px;
+  border: none;
+  color: #373867;
+}
+
+.contact-form button[type="submit"] {
+  background: #AACE9B;
+  width: 166px;
+}
+
+.contact-form button[type='reset'] {
+  width: 96px;
+  background: #FFFFFF;
+  border: 1px solid #373867;
+}

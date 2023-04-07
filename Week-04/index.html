@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Week-03</title>
+    <title>Week-04</title>
     <link rel="stylesheet" href="css/reset.css" type="text/css">
     <link rel="stylesheet" href="css/style.css" type="text/css">
     <link rel="stylesheet" href="css/aside.css" type="text/css">
@@ -87,7 +87,7 @@
         </ul>
       </section>
     </aside>
-    <main>
+    <main class="main">
       <section class="health-info">
         <h2>
           The main reason of health
@@ -102,6 +102,7 @@
         <img src="img/two-fitness.png" alt="One man and one women holding dumbbells">
       </section>
       <section class="help-guide">
+        <img src="img/man-fit.jpg" alt="">
         <h2>
           How can we help you?
         </h2>
@@ -119,61 +120,49 @@
         </div>
       </section>
       <section class="contact">
-        <h2>
-          Contact
-        </h2>
-        <img src="img/mail-icon-small.png" alt="">
-        <form>
-          <div>
-            <div>
-              <label for="name">
-                Name
-              </label>
-              <input id="name" type="text" placeholder="Insert your name">
-            </div>
-            <div>
-              <label for="surname">
-                Surname
-              </label>
-              <input id="surname" type="text" placeholder="Insert your surname">
-            </div>
-            <div>
-              <label for="email">
-                E-mail
-              </label>
-              <input id="email" type="email" placeholder="Insert your e-mail">
-            </div>
+        <div class="container">
+          <h2>
+            Contact
+          </h2>
+          <img src="img/mail-icon-small.png" alt="">
+        </div>
+        <form class="contact-form">
+          <div class="contact-personal-info">
+            <label for="">
+              Name
+              <input type="text" class="input input-small" placeholder="Insert your name">
+            </label>
+            <label for="">
+              Surname
+              <input type="text" class="input input-small" placeholder="Insert your surname">
+            </label>
+            <label for="">
+              Email
+              <input type="email" class="input input-small" placeholder="Insert your email">
+            </label>
           </div>
-          <div>
+          <div class="contact-reason">
             <label for="reason">
               Reason for contact
             </label>
-            <div>
-              <input id="reason" type="radio" name="reason" value="I want to make a query or suggestion">
-              <label for="reason">
-                I want to make a query or suggestion
-              </label>
-            </div>
-            <div>
-              <input id="reason" type="radio" name="reason" value="I want to make a claim">
-              <label for="reason">
-                I want to make a claim
-              </label>
-            </div>
-            <div>
-              <input id="reason" type="radio" name="reason" value="I want to know the memberships and costs">
-              <label for="reason">
-                I want to know the memberships and costs
-              </label>
-            </div>
+            <label for="reason">
+              <input type="radio">
+              I want to make a query or suggestion
+            </label>
+            <label for="reason">
+              <input type="radio">
+              I want to make a claim
+            </label>
+            <label for="reason">
+              <input type="radio">
+              I want to know the memberships and costs
+            </label>
           </div>
-          <div>
-            <div>
+          <div class="contact-message">
               <label for="message">
                 Message
               </label>
               <textarea name="" id="message" cols="50" rows="10" placeholder="Type your message here"></textarea>
-            </div>
           </div>
           <button type="submit">
             Send message
