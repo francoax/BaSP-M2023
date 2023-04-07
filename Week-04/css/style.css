@@ -1,0 +1,35 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  color: #373867;
+}
+
+h2 {
+  font-weight: 700;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 14px 36px;
+  border-radius: 5px;
+  border: 1px solid #373867;
+  background-color: #EBECF0;
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: 700;
+}
+
+.btn-small {
+  width: 227px;
+  height: 69px;
+  margin-top: 30px;
+  font-size: 15px;
+  line-height: 18px;
+}
