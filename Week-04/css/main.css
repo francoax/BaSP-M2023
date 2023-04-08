@@ -182,6 +182,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-bottom: 50px;
 }
 
 .activities .activities-list {
@@ -191,7 +192,7 @@
 .activities-list .list-item {
   display: flex;
   align-items: center;
-  margin-bottom: 15px;
+  margin-bottom: 20px;
 }
 
 .list-item span{
@@ -204,4 +205,43 @@
 .activities img {
   width: 48px;
   height: 38px;
+}
+
+.memberships {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.memberships h2 {
+  margin-bottom: 40px;
+}
+
+.member-type {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 30px;
+}
+
+.member-type img {
+  margin-right: 25px;
+  width: 36px;
+  height: 36px;
+}
+
+.content-type {
+  color: #000;
+}
+
+.content-type h3 {
+  margin-bottom: 15px;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.member-benefits {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  list-style-type: '-';
 }
