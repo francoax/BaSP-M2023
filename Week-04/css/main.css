@@ -37,13 +37,8 @@
   align-items: center;
   height: 684px;
   margin-top: 69px;
+  background: url('../img/man-fit.jpg') no-repeat;
   background-position: center;
-}
-
-.help-guide img {
-  position: absolute;
-  z-index: -1;
-  height: 684px;
 }
 
 .help-guide h2 {
@@ -146,4 +141,67 @@
   width: 96px;
   background: #FFFFFF;
   border: 1px solid #373867;
+}
+
+.history {
+  margin-top: 71px;
+}
+
+.history h2 {
+  margin-bottom: 45px;
+}
+
+.history .content {
+  height: 431px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: url('../img/girl-fit.png') no-repeat;
+  background-position: center;
+}
+
+.history p {
+  width: 336px;
+  height: 295px;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 23px;
+  text-align: justify;
+  color: #FFFFFF;
+  text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.5);
+}
+
+.activity-member {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 47px;
+}
+
+.activities {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.activities .activities-list {
+  margin-top: 41px;
+}
+
+.activities-list .list-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.list-item span{
+  margin-left: 12px;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 23px;
+}
+
+.activities img {
+  width: 48px;
+  height: 38px;
 }

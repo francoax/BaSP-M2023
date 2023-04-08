@@ -5,6 +5,7 @@
 body {
   font-family: 'Roboto', sans-serif;
   color: #373867;
+  overflow-x: hidden;
 }
 
 h2 {
@@ -12,6 +13,10 @@ h2 {
   font-weight: 700;
   text-transform: uppercase;
   text-align: center;
+}
+
+img {
+  width: 100%;
 }
 
 .btn {
