@@ -47,7 +47,7 @@
   color: #EBECF0;
 }
 
-.btn-small:nth-of-type(1) {
+.help-guide .btn-small:nth-of-type(1) {
   margin-top: 39px;
 }
 
@@ -219,7 +219,6 @@
 
 .member-type {
   display: flex;
-  justify-content: space-between;
   margin-bottom: 30px;
 }
 

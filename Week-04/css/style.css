@@ -32,12 +32,24 @@ img {
   font-weight: 700;
 }
 
+.btn a {
+  text-decoration: none;
+}
+
 .btn-small {
   width: 227px;
   height: 69px;
   margin-top: 30px;
   font-size: 15px;
   line-height: 18px;
+}
+
+.is-primary {
+  background-color: #373867;
+}
+
+.is-primary a {
+  color: #AACE9B;
 }
 
 .input {
