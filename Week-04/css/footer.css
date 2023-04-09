@@ -22,3 +22,9 @@
   width: 20px;
   height: 20px;
 }
+
+@media (min-width: 768px) {
+  .footer {
+    flex-grow: 1;
+  }
+}

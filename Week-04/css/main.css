@@ -3,26 +3,24 @@
   flex-direction: column;
 }
 
-.health-info {
+.health-info-section {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-.health-info h2 {
+.health-info-section h2 {
   padding-top: 63px;
   font-size: 30px;
 }
 
-.health-info img {
+.health-info-section img {
   width: 390px;
   height: 330px;
 }
 
-.health-info P {
-  width: 349px;
-  height: 138px;
-  padding-top: 21px;
+.health-info-section P {
+  padding: 21px;
   order: 1;
   font-size: 12px;
   font-weight: 400;
@@ -30,7 +28,7 @@
   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
-.help-guide {
+.help-guide-section {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -41,24 +39,24 @@
   background-position: center;
 }
 
-.help-guide h2 {
+.help-guide-section h2 {
   width: 279px;
   font-size: 40px;
   color: #EBECF0;
 }
 
-.help-guide .btn-small:nth-of-type(1) {
+.help-guide-section .btn-small:nth-of-type(1) {
   margin-top: 39px;
 }
 
-.contact {
+.contact-section {
   display: flex;
   flex-direction: column;
   align-items: center;
   margin-top: 38px;
 }
 
-.contact .container {
+.contact-section .container {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -143,15 +141,15 @@
   border: 1px solid #373867;
 }
 
-.history {
+.history-section {
   margin-top: 71px;
 }
 
-.history h2 {
+.history-section h2 {
   margin-bottom: 45px;
 }
 
-.history .content {
+.history-section .content {
   height: 431px;
   display: flex;
   justify-content: center;
@@ -160,7 +158,7 @@
   background-position: center;
 }
 
-.history p {
+.history-section p {
   width: 336px;
   height: 295px;
   font-weight: 600;
@@ -171,7 +169,7 @@
   text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.5);
 }
 
-.activity-member {
+.activity-member-section {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -243,4 +241,31 @@
   font-size: 14px;
   line-height: 16px;
   list-style-type: '-';
+}
+
+@media (min-width: 768px) {
+
+  .main {
+    flex-grow: 1;
+  }
+
+  .health-info-section img {
+    width: 657px;
+    height: 562px;
+  }
+
+  .health-info-section p {
+    margin-top: 30px;
+    width: 516px;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 23px;
+    text-shadow: none;
+  }
+
+  .help-guide-section {
+    height: 1194px;
+    background: url('../img/man-fit-tablet.png') no-repeat;
+  }
+
 }

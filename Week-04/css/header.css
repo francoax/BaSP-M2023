@@ -23,3 +23,9 @@
   font-size: 30px;
   color: #AACE9B;
 }
+
+@media (min-width: 768px) {
+  .header {
+    flex-grow: 1;
+  }
+}

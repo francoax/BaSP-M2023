@@ -34,6 +34,7 @@ img {
 
 .btn a {
   text-decoration: none;
+  color: #373867;
 }
 
 .btn-small {
@@ -67,4 +68,20 @@ img {
 
 .input-small {
   height: 28px;
+}
+
+@media (min-width: 768px) {
+  body {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    height: 100vh;
+  }
+
+  .main-container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    width: 80%;
+  }
 }

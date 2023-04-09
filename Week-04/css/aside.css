@@ -36,18 +36,18 @@
   display: none;
 }
 
-.options .mobile-options {
+.options .common-options {
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
 
-.mobile-options img {
+.common-options img {
   width: 35px;
   height: 35px;
 }
 
-.mobile-options li a {
+.common-options li a {
   text-decoration: none;
   color: #373867;
   font-weight: 700;
@@ -55,8 +55,18 @@
   line-height: 16px;
 }
 
+.common-options .option {
+  display: flex;
+  align-items: center;
+}
+
 .options {
   margin-top: 47px;
+}
+
+.options li {
+  padding: 10px;
+  text-align: start;
 }
 
 .options .mobile-logo img {
@@ -76,4 +86,73 @@
   font-weight: 700;
   font-size: 14px;
   color: #34646F; 
+}
+
+@media (min-width: 768px) {
+  .sidebar {
+    position: sticky;
+    top: 0;
+    align-self: self-start;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 20%;
+    background: #AACE9B;
+  }
+
+  .sidebar .mobile-icon {
+    display: none;
+  }
+
+  .sidebar .mobile-logo {
+    display: none;
+  }
+
+  .sidebar .desktop-icon {
+    display: block;
+    width: 67px;
+    height: 100px;
+    margin-top: 23px;
+  }
+
+  .sidebar .container, .sidebar .btn-small {
+    margin: 0;
+  }
+
+  .sidebar .btn {
+    width: 145px;
+    height: 50px;
+    margin-bottom: 30px;
+  }
+
+  .sidebar .container {
+    margin-top: 40px;
+  }
+
+  .navbar>.var-items>li:nth-child(4) {
+    display: block;
+    margin-bottom: 0;
+  }
+
+  .sidebar>.container>.options>ul>.desktop-options,
+  .sidebar>.container>.options>h2 {
+    display: block;
+  }
+
+  .options {
+    margin-top: 20px;
+  }
+
+  .options h2 {
+    font-weight: 600;
+    font-size: 18px;
+  }
+
+  .desktop-options a {
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 23px;
+    color: #373867;
+  }
 }

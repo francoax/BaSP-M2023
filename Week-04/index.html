@@ -13,13 +13,6 @@
     <link rel="stylesheet" href="css/main.css" type="text/css">
   </head>
   <body>
-    <header class="header">
-      <img src="img/rr-logo-2.png" class="desktop" alt="Radium rocket logo">
-      <img src="img/hamburger.png" class="hamburger" alt="Hamburger navigator">
-      <h1>
-        Mega rocket s.a
-      </h1>
-    </header>
     <aside class="sidebar">
       <img class="desktop-icon" src="img/rr-logo-1.png" alt="Radium Rocket icon">
       <img class="mobile-icon" src="img/hamburger.png" alt="Hamburger navigator">
@@ -70,21 +63,21 @@
                 </a>
               </li>
             </div>
-            <div class="mobile-options">
+            <div class="common-options">
               <li>
-                <a href="mailto:info@rocket.com">
+                <a class="option" href="mailto:info@rocket.com">
                   <img src="img/mail-icon-large.png" alt="mail icon">
                   info@rocket.com
                 </a>
               </li>
               <li>
-                <a href="https://goo.gl/maps/ndFHtfb9EdZk9MvSA" target="_blank">
+                <a class="option" href="https://goo.gl/maps/ndFHtfb9EdZk9MvSA" target="_blank">
                   <img src="img/home-icon.png" alt="home icon">
                   Rosario, Argentina
                 </a>
               </li>
               <li>
-                <a href="tel:000000000" target="_blank">
+                <a class="option" href="tel:000000000" target="_blank">
                   <img src="img/whatsapp-icon.png" alt="whatsapp icon">
                   (000) 000-0000
                 </a>
@@ -98,206 +91,215 @@
         </section>
       </div>
     </aside>
-    <main class="main">
-      <section class="health-info">
-        <h2>
-          The main reason of health
-        </h2>
-        <p>
-          Maecenas interdum faucibus quam ac interdum. Donec facilisis vitae ipsum a ullamcorper. Proin interdum suscipit velit. Nu
-          llam pulvinar efficitur sapien ac rhoncus. Aenean scelerisque, nisi at interdum laoreet, est nisi sagittis enim, nec ele
-          ifend justo orci quis nisl. Morbi fringilla felis non ipsum dapibus, eget ornare tortor hendrerit. Curabitur aceleifendo
-          rci. Donec condimentum ex non leo volutpat pretium. Cras aliquet quam quis semper egestas. Sed atultricies turpis. Aenea
-          n cursus porta eleifend.
-        </p>
-        <img src="img/two-fitness.png" alt="One man and one women holding dumbbells">
-      </section>
-      <section class="help-guide">
-        <h2>
-          How can we help you?
-        </h2>
-        <div class="btn btn-small">
-          Turn reservation
-        </div>
-        <div class="btn btn-small">
-          Agent display
-        </div>
-        <div class="btn btn-small">
-          Membership managment
-        </div>
-        <div class="btn btn-small">
-          Contact and suggestion form
-        </div>
-      </section>
-      <section class="contact">
-        <div class="container">
+    <div class="main-container">
+      <header class="header">
+        <img src="img/rr-logo-2.png" class="desktop" alt="Radium rocket logo">
+        <img src="img/hamburger.png" class="hamburger" alt="Hamburger navigator">
+        <h1>
+          Mega rocket s.a
+        </h1>
+      </header>
+      <main class="main">
+        <section class="health-info-section">
           <h2>
-            Contact
+            The main reason of health
           </h2>
-          <img src="img/mail-icon-small.png" alt="">
-        </div>
-        <form class="contact-form">
-          <div class="contact-personal-info">
-            <label for="">
-              Name
-              <input type="text" class="input input-small" placeholder="Insert your name">
-            </label>
-            <label for="">
-              Surname
-              <input type="text" class="input input-small" placeholder="Insert your surname">
-            </label>
-            <label for="">
-              Email
-              <input type="email" class="input input-small" placeholder="Insert your email">
-            </label>
-          </div>
-          <div class="contact-reason">
-            <label for="reason">
-              Reason for contact
-            </label>
-            <label for="reason">
-              <input type="radio">
-              I want to make a query or suggestion
-            </label>
-            <label for="reason">
-              <input type="radio">
-              I want to make a claim
-            </label>
-            <label for="reason">
-              <input type="radio">
-              I want to know the memberships and costs
-            </label>
-          </div>
-          <div class="contact-message">
-              <label for="message">
-                Message
-              </label>
-              <textarea name="" id="message" cols="50" rows="10" placeholder="Type your message here"></textarea>
-          </div>
-          <button type="submit">
-            Send message
-          </button>
-          <button type="reset">
-            Reset
-          </button>
-        </form>
-      </section>
-      <section class="history">
-        <h2>
-          Our History
-        </h2>
-        <div class="content">
           <p>
-            Quisque pellentesque lacus metus, sodales tempor leo tincidunt ut. Curabitur quis elit ut lectus vehicula rutrum
-            eu at sem.
-            Nam eget quam mi. Donec gravida metus ante, eget vulputate nibh posuere nec. Donec iaculis consequat neque at
-            vulputate.
-            Nulla tincidunt diam justo, eget facilisis nibh porttitor id. Suspendisse rhoncus elit non dapibus ullamcorper.
-            Proin in
-            tempor quam. Nulla in eros est.
+            Maecenas interdum faucibus quam ac interdum. Donec facilisis vitae ipsum a ullamcorper. Proin interdum suscipit velit. Nu
+            llam pulvinar efficitur sapien ac rhoncus. Aenean scelerisque, nisi at interdum laoreet, est nisi sagittis enim, nec ele
+            ifend justo orci quis nisl. Morbi fringilla felis non ipsum dapibus, eget ornare tortor hendrerit. Curabitur aceleifendo
+            rci. Donec condimentum ex non leo volutpat pretium. Cras aliquet quam quis semper egestas. Sed atultricies turpis. Aenea
+            n cursus porta eleifend.
           </p>
+          <img src="img/two-fitness.png" alt="One man and one women holding dumbbells">
+        </section>
+        <section class="help-guide-section">
+          <h2>
+            How can we help you?
+          </h2>
+          <div class="btn btn-small">
+            Turn reservation
+          </div>
+          <div class="btn btn-small">
+            Agent display
+          </div>
+          <div class="btn btn-small">
+            Membership managment
+          </div>
+          <div class="btn btn-small">
+            Contact and suggestion form
+          </div>
+        </section>
+        <section class="contact-section">
+          <div class="container">
+            <h2>
+              Contact
+            </h2>
+            <img src="img/mail-icon-small.png" alt="">
+          </div>
+          <form class="contact-form">
+            <div class="contact-personal-info">
+              <label for="">
+                Name
+                <input type="text" class="input input-small" placeholder="Insert your name">
+              </label>
+              <label for="">
+                Surname
+                <input type="text" class="input input-small" placeholder="Insert your surname">
+              </label>
+              <label for="">
+                Email
+                <input type="email" class="input input-small" placeholder="Insert your email">
+              </label>
+            </div>
+            <div class="contact-reason">
+              <label for="reason">
+                Reason for contact
+              </label>
+              <label for="reason">
+                <input type="radio">
+                I want to make a query or suggestion
+              </label>
+              <label for="reason">
+                <input type="radio">
+                I want to make a claim
+              </label>
+              <label for="reason">
+                <input type="radio">
+                I want to know the memberships and costs
+              </label>
+            </div>
+            <div class="contact-message">
+                <label for="message">
+                  Message
+                </label>
+                <textarea name="" id="message" cols="50" rows="10" placeholder="Type your message here"></textarea>
+            </div>
+            <button type="submit">
+              Send message
+            </button>
+            <button type="reset">
+              Reset
+            </button>
+          </form>
+        </section>
+        <section class="history-section">
+          <h2>
+            Our History
+          </h2>
+          <div class="content">
+            <p>
+              Quisque pellentesque lacus metus, sodales tempor leo tincidunt ut. Curabitur quis elit ut lectus vehicula rutrum
+              eu at sem.
+              Nam eget quam mi. Donec gravida metus ante, eget vulputate nibh posuere nec. Donec iaculis consequat neque at
+              vulputate.
+              Nulla tincidunt diam justo, eget facilisis nibh porttitor id. Suspendisse rhoncus elit non dapibus ullamcorper.
+              Proin in
+              tempor quam. Nulla in eros est.
+            </p>
+          </div>
+        </section>
+        <section class="activity-member-section">
+          <article class="activities">
+            <h2>
+              Activities
+            </h2>
+            <ul class="activities-list">
+              <li class="list-item">
+                <img src="img/dumbbull.png" alt="Barbell">
+                <span>
+                  Crossfit
+                </span>
+              </li>
+              <li class="list-item">
+                <img src="img/bicep-logo.png" alt="Strong arm">
+                <span>
+                  Fitness
+                </span>
+              </li>
+              <li class="list-item">
+                <img src="img/spinning-logo.png" alt="Treadmill">
+                <span>
+                  Spinning
+                </span>
+              </li>
+              <li class="list-item">
+                <img src="img/gym-machine-logo.png" alt="Gym machine">
+                <span>
+                  Functional
+                </span>
+              </li>
+              <li class="list-item">
+                <img src="img/box-logo.png" alt="Boxin glove">
+                <span>
+                  Box
+                </span>
+              </li>
+            </ul>
+          </article>
+          <article class="memberships">
+            <h2>
+              Membership Types
+            </h2>
+            <div class="member-type">
+              <img src="img/shield-icon.png" alt="Shield icon">
+              <div class="content-type">
+                <h3>
+                  Black membership
+                </h3>
+                <ul class="member-benefits">
+                  <li>Free access to the weight room</li>
+                  <li>Free access to clases prior</li>
+                  <li>Registration</li>
+                  <li>Personalized monitoring by coach</li>
+                  <li>Grid display</li>
+                </ul>
+              </div>
+            </div>
+            <div class="member-type">
+              <img src="img/flash-icon.png" alt="Flash icon">
+              <div class="content-type">
+                <h3>
+                  Classis membership
+                </h3>
+                <ul class="member-benefits">
+                  <li>Free access to the weight room</li>
+                  <li>Personalized monitoring by coach</li>
+                  <li>Grid display</li>
+                </ul>
+              </div>
+            </div>
+            <div class="member-type">
+              <img src="img/heart-icon.png" alt="Hearth icon">
+              <div class="content-type">
+                <h3>
+                  Only classes membership
+                </h3>
+                <ul class="member-benefits">
+                  <li>Free access to the weight room</li>
+                  <li>Grid display</li>
+                </ul>
+              </div>
+            </div>
+          </article>
+        </section>
+      </main>
+      <footer class="footer">
+        <p>
+          Copyright © 2022 Radium Rocket. All rights reserved.
+        </p>
+        <div>
+          <a href="#" class="social">
+            <img src="img/gmail-logo.png" alt="gmail icon">
+          </a>
+          <a href="#" class="social">
+            <img src="img/facebook-logo.png" alt="facebook icon">
+          </a>
+          <a href="#" class="social">
+            <img src="img/instagram-logo.png" alt="instagram icon">
+          </a>
         </div>
-      </section>
-      <section class="activity-member">
-        <article class="activities">
-          <h2>
-            Activities
-          </h2>
-          <ul class="activities-list">
-            <li class="list-item">
-              <img src="img/dumbbull.png" alt="Barbell">
-              <span>
-                Crossfit
-              </span>
-            </li>
-            <li class="list-item">
-              <img src="img/bicep-logo.png" alt="Strong arm">
-              <span>
-                Fitness
-              </span>
-            </li>
-            <li class="list-item">
-              <img src="img/spinning-logo.png" alt="Treadmill">
-              <span>
-                Spinning
-              </span>
-            </li>
-            <li class="list-item">
-              <img src="img/gym-machine-logo.png" alt="Gym machine">
-              <span>
-                Functional
-              </span>
-            </li>
-            <li class="list-item">
-              <img src="img/box-logo.png" alt="Boxin glove">
-              <span>
-                Box
-              </span>
-            </li>
-          </ul>
-        </article>
-        <article class="memberships">
-          <h2>
-            Membership Types
-          </h2>
-          <div class="member-type">
-            <img src="img/shield-icon.png" alt="Shield icon">
-            <div class="content-type">
-              <h3>
-                Black membership
-              </h3>
-              <ul class="member-benefits">
-                <li>Free access to the weight room</li>
-                <li>Free access to clases prior</li>
-                <li>Registration</li>
-                <li>Personalized monitoring by coach</li>
-                <li>Grid display</li>
-              </ul>
-            </div>
-          </div>
-          <div class="member-type">
-            <img src="img/flash-icon.png" alt="Flash icon">
-            <div class="content-type">
-              <h3>
-                Classis membership
-              </h3>
-              <ul class="member-benefits">
-                <li>Free access to the weight room</li>
-                <li>Personalized monitoring by coach</li>
-                <li>Grid display</li>
-              </ul>
-            </div>
-          </div>
-          <div class="member-type">
-            <img src="img/heart-icon.png" alt="Hearth icon">
-            <div class="content-type">
-              <h3>
-                Only classes membership
-              </h3>
-              <ul class="member-benefits">
-                <li>Free access to the weight room</li>
-                <li>Grid display</li>
-              </ul>
-            </div>
-          </div>
-        </article>
-      </section>
-    </main>
-    <footer class="footer">
-      <p>
-        Copyright © 2022 Radium Rocket. All rights reserved.
-      </p>
-      <div>
-        <a href="#" class="social">
-          <img src="img/gmail-logo.png" alt="gmail icon">
-        </a>
-        <a href="#" class="social">
-          <img src="img/facebook-logo.png" alt="facebook icon">
-        </a>
-        <a href="#" class="social">
-          <img src="img/instagram-logo.png" alt="instagram icon">
-        </a>
-      </div>
-    </footer>
+      </footer>
+    </div>
   </body>
 </html>
