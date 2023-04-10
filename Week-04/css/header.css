@@ -17,15 +17,40 @@
 }
 
 .header h1 {
-  margin-right: 31px;
+  margin-right: 5%;
   text-transform: uppercase;
   font-weight: 700;
   font-size: 30px;
   color: #AACE9B;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 480px) {
   .header {
     flex-grow: 1;
+    height: 106px;
+    justify-content: unset;
+  }
+
+  .header .desktop {
+    display: block;
+    width: 196px;
+    margin-left: 27px;
+    margin-top: 31px;
+    margin-right: 26px;
+    margin-bottom: 30px;
+  }
+
+  .header h1 {
+    margin-bottom: 10px;
+  }
+
+  .header .hamburger {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .header {
+    height: 135px;
   }
 }

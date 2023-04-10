@@ -16,80 +16,78 @@
     <aside class="sidebar">
       <img class="desktop-icon" src="img/rr-logo-1.png" alt="Radium Rocket icon">
       <img class="mobile-icon" src="img/hamburger.png" alt="Hamburger navigator">
-      <div class="container">
-        <nav class="navbar">
-          <ul class="var-items">
-            <li class="btn btn-small is-primary">
+      <nav class="navbar">
+        <ul class="var-items">
+          <li class="btn is-primary">
+            <a href="#">
+              Home
+            </a>
+          </li>
+          <li class="btn">
+            <a href="#">
+              Sign up
+            </a>
+          </li>
+          <li class="btn">
+            <a href="#">
+              Log in
+            </a>
+          </li>
+          <li class="btn">
+            <a href="#">
+              Contact
+            </a>
+          </li>
+        </ul>
+      </nav>
+      <section class="options">
+        <h2>
+          Other options
+        </h2>
+        <ul>
+          <div class="desktop-options">
+            <li>
               <a href="#">
-                Home
+                How can we help you ?
               </a>
             </li>
-            <li class="btn btn-small">
+            <li>
               <a href="#">
-                Sign up
+                Our history
               </a>
             </li>
-            <li class="btn btn-small">
+            <li>
               <a href="#">
-                Log in
+                Activities
               </a>
             </li>
-            <li class="btn btn-small">
-              <a href="#">
-                Contact
-              </a>
-            </li>
-          </ul>
-        </nav>
-        <section class="options">
-          <h2>
-            Other options
-          </h2>
-          <ul>
-            <div class="desktop-options">
-              <li>
-                <a href="#">
-                  How can we help you ?
-                </a>
-              </li>
-              <li>
-                <a href="#">
-                  Our history
-                </a>
-              </li>
-              <li>
-                <a href="#">
-                  Activities
-                </a>
-              </li>
-            </div>
-            <div class="common-options">
-              <li>
-                <a class="option" href="mailto:info@rocket.com">
-                  <img src="img/mail-icon-large.png" alt="mail icon">
-                  info@rocket.com
-                </a>
-              </li>
-              <li>
-                <a class="option" href="https://goo.gl/maps/ndFHtfb9EdZk9MvSA" target="_blank">
-                  <img src="img/home-icon.png" alt="home icon">
-                  Rosario, Argentina
-                </a>
-              </li>
-              <li>
-                <a class="option" href="tel:000000000" target="_blank">
-                  <img src="img/whatsapp-icon.png" alt="whatsapp icon">
-                  (000) 000-0000
-                </a>
-              </li>
-            </div>
-          </ul>
-          <div class="mobile-logo">
-            <img src="img/rr-logo-1.png" alt="Rocket radium logo">
-            <h2>Mega rocket s.a</h2>
           </div>
-        </section>
-      </div>
+          <div class="common-options">
+            <li>
+              <a class="option" href="mailto:info@rocket.com">
+                <img src="img/mail-icon.png" alt="mail icon">
+                info@rocket.com
+              </a>
+            </li>
+            <li>
+              <a class="option" href="https://goo.gl/maps/ndFHtfb9EdZk9MvSA" target="_blank">
+                <img src="img/home-icon.png" alt="home icon">
+                Rosario, Argentina
+              </a>
+            </li>
+            <li>
+              <a class="option" href="tel:000000000" target="_blank">
+                <img src="img/whatsapp-icon.png" alt="whatsapp icon">
+                (000) 000-0000
+              </a>
+            </li>
+          </div>
+        </ul>
+        <div class="mobile-logo">
+          <img src="img/rr-logo-1.png" alt="Rocket radium logo">
+          <h2>Mega rocket s.a</h2>
+        </div>
+      </section>
     </aside>
     <div class="main-container">
       <header class="header">
@@ -117,16 +115,16 @@
           <h2>
             How can we help you?
           </h2>
-          <div class="btn btn-small">
+          <div class="btn">
             Turn reservation
           </div>
-          <div class="btn btn-small">
+          <div class="btn">
             Agent display
           </div>
-          <div class="btn btn-small">
+          <div class="btn">
             Membership managment
           </div>
-          <div class="btn btn-small">
+          <div class="btn">
             Contact and suggestion form
           </div>
         </section>
@@ -135,45 +133,45 @@
             <h2>
               Contact
             </h2>
-            <img src="img/mail-icon-small.png" alt="">
+            <img src="img/mail-icon.png" alt="">
           </div>
           <form class="contact-form">
             <div class="contact-personal-info">
-              <label for="">
+              <label for="name" class="label">
                 Name
-                <input type="text" class="input input-small" placeholder="Insert your name">
+                <input id="name" type="text" class="input input-small" placeholder="Insert your name">
               </label>
-              <label for="">
+              <label for="surname" class="label">
                 Surname
-                <input type="text" class="input input-small" placeholder="Insert your surname">
+                <input id="surname" type="text" class="input input-small" placeholder="Insert your surname">
               </label>
-              <label for="">
+              <label for="email" class="label">
                 Email
-                <input type="email" class="input input-small" placeholder="Insert your email">
+                <input id="email" type="email" class="input input-small" placeholder="Insert your email">
               </label>
             </div>
             <div class="contact-reason">
-              <label for="reason">
+              <label for="reason" class="label">
                 Reason for contact
               </label>
-              <label for="reason">
-                <input type="radio">
+              <label for="reason" class="label">
+                <input id="reason" type="radio">
                 I want to make a query or suggestion
               </label>
-              <label for="reason">
-                <input type="radio">
+              <label for="reason" class="label">
+                <input id="reason" type="radio">
                 I want to make a claim
               </label>
-              <label for="reason">
-                <input type="radio">
+              <label for="reason" class="label">
+                <input id="reason" type="radio">
                 I want to know the memberships and costs
               </label>
             </div>
             <div class="contact-message">
-                <label for="message">
+                <label for="message" class="label">
                   Message
                 </label>
-                <textarea name="" id="message" cols="50" rows="10" placeholder="Type your message here"></textarea>
+                <textarea id="message" name="" id="message" cols="50" rows="10" placeholder="Type your message here"></textarea>
             </div>
             <button type="submit">
               Send message
@@ -285,20 +283,22 @@
         </section>
       </main>
       <footer class="footer">
-        <p>
-          Copyright © 2022 Radium Rocket. All rights reserved.
-        </p>
-        <div>
-          <a href="#" class="social">
-            <img src="img/gmail-logo.png" alt="gmail icon">
-          </a>
-          <a href="#" class="social">
-            <img src="img/facebook-logo.png" alt="facebook icon">
-          </a>
-          <a href="#" class="social">
-            <img src="img/instagram-logo.png" alt="instagram icon">
-          </a>
-        </div>
+        <section class="footer-content">
+          <p>
+            Copyright © 2022 Radium Rocket. All rights reserved.
+          </p>
+          <div>
+            <a href="#" class="social">
+              <img src="img/gmail-logo.png" alt="gmail icon">
+            </a>
+            <a href="#" class="social">
+              <img src="img/facebook-logo.png" alt="facebook icon">
+            </a>
+            <a href="#" class="social">
+              <img src="img/instagram-logo.png" alt="instagram icon">
+            </a>
+          </div>
+        </section>
       </footer>
     </div>
   </body>

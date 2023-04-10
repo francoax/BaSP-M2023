@@ -14,11 +14,6 @@
   font-size: 30px;
 }
 
-.health-info-section img {
-  width: 390px;
-  height: 330px;
-}
-
 .health-info-section P {
   padding: 21px;
   order: 1;
@@ -45,7 +40,15 @@
   color: #EBECF0;
 }
 
-.help-guide-section .btn-small:nth-of-type(1) {
+.help-guide-section .btn {
+  width: 227px;
+  height: 69px;
+  margin-top: 30px;
+  font-size: 15px;
+  line-height: 18px;
+}
+
+.help-guide-section .btn:nth-of-type(1) {
   margin-top: 39px;
 }
 
@@ -60,16 +63,23 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  width: 100%;
+}
+
+.container img {
+  width: 40px;
+  height: 40px;
 }
 
 .contact-form {
+  width: 100%;
   margin-top: 35px;
 }
 
-.contact-form label {
+.contact-form .label {
   display: flex;
-  justify-content: space-between;
   align-items: center;
+  justify-content: space-between;
   margin-left: 35px;
   margin-bottom: 15px;
   color: #373867;
@@ -79,8 +89,13 @@
 }
 
 .contact-form input {
-  margin-left: 24px;
-  margin-right: 33px;
+  margin-right: 10px;
+}
+
+.contact-personal-info {
+  display: flex;
+  flex-direction: column;
+  margin: auto;
 }
 
 .contact-reason {
@@ -89,21 +104,21 @@
   margin-top: 43px;
 }
 
-.contact-reason label:nth-of-type(1) {
+.contact-reason .label:nth-of-type(1) {
   margin-left: 35px;
   margin-bottom: 29px;
 }
 
-.contact-reason label {
+.contact-reason .label {
   justify-content: flex-start;
   margin-left: 0;
   margin-bottom: 27px;
 }
 
 .contact-message textarea {
-  width: 330px;
+  width: 95%;
+  margin-left: 10px;
   height: 104px;
-  margin: 0px 30px;
   resize: none;
   border: 1px solid #E0E0E0;
   border-radius: 4px;
@@ -159,8 +174,7 @@
 }
 
 .history-section p {
-  width: 336px;
-  height: 295px;
+  padding: 0px 20px;
   font-weight: 600;
   font-size: 20px;
   line-height: 23px;
@@ -179,7 +193,6 @@
 .activities {
   display: flex;
   flex-direction: column;
-  align-items: center;
   margin-bottom: 50px;
 }
 
@@ -213,6 +226,7 @@
 
 .memberships h2 {
   margin-bottom: 40px;
+  align-self: center;
 }
 
 .member-type {
@@ -243,20 +257,14 @@
   list-style-type: '-';
 }
 
-@media (min-width: 768px) {
+@media (min-width: 480px) {
 
   .main {
     flex-grow: 1;
   }
 
-  .health-info-section img {
-    width: 657px;
-    height: 562px;
-  }
-
   .health-info-section p {
     margin-top: 30px;
-    width: 516px;
     font-weight: 600;
     font-size: 20px;
     line-height: 23px;
@@ -265,7 +273,139 @@
 
   .help-guide-section {
     height: 1194px;
-    background: url('../img/man-fit-tablet.png') no-repeat;
+    margin-top: 119px;
+    background-size: cover;
   }
 
+  .help-guide-section .btn {
+    width: 351px;
+    height: 107px;
+    margin-top: 0;
+    margin-bottom: 47px;
+    padding: 0;
+    font-size: 30px;
+    line-height: 35px;
+    text-align: center;
+  }
+
+  .contact-section {
+    align-items: flex-start;
+  }
+
+  .contact-section h2 {
+    font-size: 40px;
+  }
+
+  .contact-section .container img {
+    width: 64px;
+    height: 64px;
+  }
+
+  .contact-form {
+    margin-top: 50px;
+  }
+
+  .contact-form .input::placeholder {
+    font-size: 15px;
+    font-weight: 700;
+  }
+
+  .contact-form .label {
+    font-size: 20px;
+    margin-left: 35px;
+  }
+
+  .contact-reason {
+    margin-top: 100px;
+  }
+  
+  .contact-reason .label:nth-of-type(1) {
+    margin-bottom: 60px;
+  }
+
+  .contact-form input {
+    margin-left: 0;
+  }
+
+  .contact-message {
+    margin-top: 50px;
+  }
+
+  .contact-form button {
+    height: 47px;
+    margin-left: 35px;
+  }
+
+  .contact-personal-info .label {
+    margin-bottom: 35px;
+  }
+
+  .history-section {
+    margin-top: 125px;
+  }
+
+  .history-section h2 {
+    font-size: 40px;
+  }
+
+  .history-section .content {
+    height: 716px;
+  }
+
+  .content p {
+    font-weight: 700;
+    font-size: 25px;
+    line-height: 35px;
+  }
+
+  .activities h2 {
+    font-size: 2rem;
+  }
+
+  .activities .activities-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .activities-list .list-item {
+    flex-basis: 190px;
+  }
+
+  .memberships h2 {
+    font-size: 2rem;
+  }
+
+  .member-type h3 {
+    font-size: 1.5rem;
+  }
+
+  .member-benefits {
+    font-size: 1rem;
+    line-height: 23px;
+    font-weight: 600;
+  }
+
+  .member-type img {
+    margin-right: 15px;
+    margin-top: 15px;
+  }
+
+}
+
+@media screen and (min-width:768px) {
+  .contact-personal-info {
+    width: 70%;
+    margin: 0;
+  }
+  
+  .activities-list .list-item {
+    flex-basis: 240px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .contact-personal-info {
+    width: 50%;
+  }
 }
