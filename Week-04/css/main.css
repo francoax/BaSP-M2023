@@ -3,6 +3,10 @@
   flex-direction: column;
 }
 
+.main section {
+  width: 100%;
+}
+
 .health-info-section {
   display: flex;
   flex-direction: column;
@@ -14,7 +18,12 @@
   font-size: 30px;
 }
 
-.health-info-section P {
+.health-content {
+  display: flex;
+  flex-direction: column;
+}
+
+.health-content P {
   padding: 21px;
   order: 1;
   font-size: 12px;
@@ -48,7 +57,7 @@
   line-height: 18px;
 }
 
-.help-guide-section .btn:nth-of-type(1) {
+.help-guide-section .content {
   margin-top: 39px;
 }
 
@@ -88,14 +97,14 @@
   line-height: 16px;;
 }
 
-.contact-form input {
-  margin-right: 10px;
-}
-
 .contact-personal-info {
   display: flex;
   flex-direction: column;
   margin: auto;
+}
+
+.contact-personal-info .input {
+  margin-right: 2rem;
 }
 
 .contact-reason {
@@ -113,6 +122,11 @@
   justify-content: flex-start;
   margin-left: 0;
   margin-bottom: 27px;
+}
+
+.contact-reason .label input {
+  margin-left: 24px;
+  margin-right: 30px;
 }
 
 .contact-message textarea {
@@ -170,7 +184,6 @@
   justify-content: center;
   align-items: center;
   background: url('../img/girl-fit.png') no-repeat;
-  background-position: center;
 }
 
 .history-section p {
@@ -292,6 +305,11 @@
     align-items: flex-start;
   }
 
+  .contact-section .input {
+    width: 293px;
+    height: 45px;
+  }
+
   .contact-section h2 {
     font-size: 40px;
   }
@@ -323,6 +341,10 @@
     margin-bottom: 60px;
   }
 
+  .contact-reason .label input {
+    margin-left: 0;
+  }
+
   .contact-form input {
     margin-left: 0;
   }
@@ -330,6 +352,11 @@
   .contact-message {
     margin-top: 50px;
   }
+
+  .contact-message textarea {
+    height: auto;
+  }
+  
 
   .contact-form button {
     height: 47px;
@@ -353,9 +380,14 @@
   }
 
   .content p {
+    padding: 4rem;
     font-weight: 700;
     font-size: 25px;
     line-height: 35px;
+  }
+
+  .activities {
+    width: 70%;
   }
 
   .activities h2 {
@@ -364,12 +396,12 @@
 
   .activities .activities-list {
     display: flex;
+    flex-direction: column;
     flex-wrap: wrap;
-    justify-content: center;
   }
 
   .activities-list .list-item {
-    flex-basis: 190px;
+    flex-basis: 20%;
   }
 
   .memberships h2 {
@@ -395,17 +427,167 @@
 
 @media screen and (min-width:768px) {
   .contact-personal-info {
-    width: 70%;
+    width: 80%;
     margin: 0;
-  }
-  
-  .activities-list .list-item {
-    flex-basis: 240px;
   }
 }
 
 @media screen and (min-width: 1024px) {
+
+  .main section{
+    width: 90%;
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+
+  .line-division {
+    margin-left: 5%;
+    width: 90%;
+    background: #373867;
+    border: 2px solid #373867;
+  }
+
+  .health-info-section {
+    height: 48rem;
+    align-items: flex-start;
+  }
+
+  .health-content {
+    flex-direction: row;
+  }
+
+  .health-content p {
+    order: 0;
+    padding: 0;
+  }
+
+  .health-content img {
+    width: 60%;
+  }
+
+  .help-guide-section {
+    height: 54rem;
+    margin-top: 40px;
+    margin-bottom: 65px;
+  }
+
+  .help-guide-section h2 {
+    width: auto;
+  }
+
+  .help-guide-section .content {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .help-guide-section .content .btn {
+    margin: 2rem;
+  }
+
+  .contact-section {
+    margin-bottom: 24px;
+  }
+
+  .contact-section .container {
+    justify-content: flex-start;
+  }
+
+  .contact-section .label {
+    margin-left: 0;
+    font-size: 1.5rem;
+    line-height: 2rem;
+  }
+
+  .contact-form button {
+    margin-left: 0;
+  }
+
   .contact-personal-info {
+    width: 60%;
+  }
+
+  .contact-reason {
+    margin-top: 30px;
+  }
+
+  .contact-reason .label:nth-of-type(1) {
+    margin-left: 0;
+  }
+
+  .contact-message textarea {
+    width: 80%;
+    margin: 0;
+  }
+
+  .history-section {
+    margin-bottom: 5rem;
+    margin-top: 40px;
+  }
+
+  .history-section .content {
+    height: 47rem;
+  }
+
+  .history-section p {
+    font-size: 30px;
+    padding: 9rem;
+  }
+
+  .history-section h2 {
+    text-align: start;
+    margin-bottom: 25px;
+  }
+
+  .activity-member-section {
+    flex-direction: row;
+    align-items: unset;
+  }
+
+  .activities {
     width: 50%;
+    align-items: start;
+  }
+
+  .activities h2, .memberships h2 {
+    font-size: 2rem;
+  }
+
+  .activities .activities-list {
+    flex-wrap: nowrap;
+  }
+
+  .list-item img {
+    width: 128px;
+    height: 118px;
+  }
+
+  .list-item span {
+    margin-left: 5rem;
+    font-size: 1.5rem;
+  }
+
+  .memberships h2 {
+    color: #000;
+  }
+
+  .member-type {
+    margin-bottom: 7rem;
+  }
+
+  .member-type img {
+    width: 46px;
+    height: 46px;
+    margin-top: 30px;
+    margin-right: 40px;
+  }
+
+  .content-type h3 {
+    font-size: 1.5rem;
+  }
+
+  .content-type ul {
+    font-size: 1rem;
   }
 }

@@ -49,3 +49,19 @@
     height: 107px;
   }
 }
+
+@media screen and (min-width: 1024px) {
+  .footer-content {
+    justify-content: space-between;
+  }
+
+  .footer-content p {
+    margin-left: 60px;
+    font-size: 20px;
+  }
+
+  .social img {
+    width: 60px;
+    height: 50px;
+  }
+}
