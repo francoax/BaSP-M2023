@@ -35,10 +35,6 @@
   display: none;
 }
 
-.options .common-options {
-
-}
-
 .common-options img {
   width: 35px;
   height: 35px;
@@ -48,8 +44,8 @@
   text-decoration: none;
   color: #373867;
   font-weight: 700;
-  font-size: 14px;
-  line-height: 16px;
+  font-size: 0.875rem;
+  line-height: 1rem;
 }
 
 .common-options .option {
@@ -76,7 +72,7 @@
 .mobile-logo h2 {
   padding-top: 10px;
   font-weight: 700;
-  font-size: 14px;
+  font-size: 0.875rem;
   color: #34646F; 
 }
 
@@ -85,8 +81,6 @@
     position: fixed;
     top: 0;
     display: flex;
-    flex-direction: column;
-    align-items: center;
     width: 20%;
     background: #AACE9B;
   }
@@ -105,6 +99,15 @@
     height: 100px;
     margin-top: 23px;
     margin-bottom: 45px;
+  }
+
+  .desktop-options .option,
+  .common-options .option {
+    font-size: clamp(0.8rem, 1.5vw, 1.25rem);
+  }
+
+  .common-options li:nth-of-type(1) .option {
+    flex-wrap: wrap;
   }
 
   .var-items {
@@ -145,7 +148,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: 20px;
+    margin-top: 0;
   }
 
   .options ul {
@@ -155,7 +158,7 @@
   .options h2 {
     margin-bottom: 10px;
     font-weight: 600;
-    font-size: 18px;
+    font-size: clamp(1rem, 1.5vw, 1.25rem);
   }
 
   .desktop-options li {
@@ -165,8 +168,52 @@
   .desktop-options a {
     text-decoration: none;
     font-weight: 600;
-    font-size: 16px;
-    line-height: 23px;
+    font-size: 1rem;
+    line-height: 1.4rem;
     color: #373867;
   }
+}
+
+@media screen and (min-width: 1024px) {
+  .sidebar .desktop-icon {
+    width: auto;
+    height: auto;
+  }
+
+  .var-items li {
+    width: 80%;
+  }
+
+  .var-items> li:nth-child(1) > .btn {
+    font-size: 1.8rem;
+  }
+
+  .sidebar .btn {
+    font-size: 1.25rem;
+    font-weight: 600;
+  }
+
+  .options {
+    width: 90%;
+    padding: 5%;
+  }
+
+  .options h2 {
+    align-self: flex-start;
+  }
+
+  .options ul {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .common-options {
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  }
+
+  .desktop-options li {
+    margin-left: 0;
+    margin-bottom: 10px;
+  }
+  
 }

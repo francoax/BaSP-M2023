@@ -26,7 +26,7 @@
 .health-content P {
   padding: 21px;
   order: 1;
-  font-size: 12px;
+  font-size: 0.875rem;
   font-weight: 400;
   line-height: 14.06px;
   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25);
@@ -170,6 +170,23 @@
   border: 1px solid #373867;
 }
 
+.input {
+  padding-left: 15px;
+  border-radius: 20px;
+  border: 1px solid #000;
+}
+
+.input::placeholder {
+  font-weight: 400;
+  font-size: 0.75rem;
+  line-height: 0.875rem;
+  color: rgba(55, 56, 103, 0.43);
+}
+
+.input-small {
+  height: 28px;
+}
+
 .history-section {
   margin-top: 71px;
 }
@@ -184,6 +201,7 @@
   justify-content: center;
   align-items: center;
   background: url('../img/girl-fit.png') no-repeat;
+  background-position: center;
 }
 
 .history-section p {
@@ -276,18 +294,18 @@
     flex-grow: 1;
   }
 
+  .help-guide-section {
+    height: 1194px;
+    margin-top: 119px;
+    background-size: cover;
+  }
+
   .health-info-section p {
     margin-top: 30px;
     font-weight: 600;
     font-size: 20px;
     line-height: 23px;
     text-shadow: none;
-  }
-
-  .help-guide-section {
-    height: 1194px;
-    margin-top: 119px;
-    background-size: cover;
   }
 
   .help-guide-section .btn {
@@ -372,7 +390,7 @@
   }
 
   .history-section h2 {
-    font-size: 40px;
+    font-size: 2.5rem;
   }
 
   .history-section .content {
@@ -382,7 +400,7 @@
   .content p {
     padding: 4rem;
     font-weight: 700;
-    font-size: 25px;
+    font-size: 1.5rem;
     line-height: 35px;
   }
 
@@ -414,7 +432,7 @@
 
   .member-benefits {
     font-size: 1rem;
-    line-height: 23px;
+    line-height: 1.4rem;
     font-weight: 600;
   }
 
@@ -480,6 +498,7 @@
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
+    max-width: 80%;
   }
 
   .help-guide-section .content .btn {
