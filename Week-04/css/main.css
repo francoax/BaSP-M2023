@@ -91,10 +91,10 @@
   justify-content: space-between;
   margin-left: 35px;
   margin-bottom: 15px;
-  color: #373867;
   font-weight: 700;
   font-size: 14px;
   line-height: 16px;;
+  color: #373867;
 }
 
 .contact-personal-info {
@@ -139,12 +139,12 @@
 }
 
 .contact-message textarea::placeholder {
+  padding: 10px 16px;
   font-family: 'Roboto', sans-serif;
   font-weight: 700;
   font-size: 15px;
   line-height: 18px;
   opacity: 0.5;
-  padding: 10px 16px;
   color: #373867;
 }
 
@@ -160,8 +160,8 @@
 }
 
 .contact-form button[type="submit"] {
-  background: #AACE9B;
   width: 166px;
+  background: #AACE9B;
 }
 
 .contact-form button[type='reset'] {
@@ -196,10 +196,10 @@
 }
 
 .history-section .content {
-  height: 431px;
   display: flex;
   justify-content: center;
   align-items: center;
+  height: 431px;
   background: url('../img/girl-fit.png') no-repeat;
   background-position: center;
 }
@@ -210,8 +210,8 @@
   font-size: 20px;
   line-height: 23px;
   text-align: justify;
-  color: #FFFFFF;
   text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.5);
+  color: #FFFFFF;
 }
 
 .activity-member-section {
@@ -237,7 +237,7 @@
   margin-bottom: 20px;
 }
 
-.list-item span{
+.list-item span {
   margin-left: 12px;
   font-weight: 600;
   font-size: 20px;
@@ -266,9 +266,9 @@
 }
 
 .member-type img {
-  margin-right: 25px;
   width: 36px;
   height: 36px;
+  margin-right: 25px;
 }
 
 .content-type {
@@ -303,8 +303,8 @@
   .health-info-section p {
     margin-top: 30px;
     font-weight: 600;
-    font-size: 20px;
-    line-height: 23px;
+    font-size: 1.25rem;
+    line-height: 1.4rem;
     text-shadow: none;
   }
 
@@ -314,8 +314,8 @@
     margin-top: 0;
     margin-bottom: 47px;
     padding: 0;
-    font-size: 30px;
-    line-height: 35px;
+    font-size: 1.875rem;
+    line-height: 2rem;
     text-align: center;
   }
 
@@ -342,13 +342,13 @@
   }
 
   .contact-form .input::placeholder {
-    font-size: 15px;
+    font-size: 1rem;
     font-weight: 700;
   }
 
   .contact-form .label {
-    font-size: 20px;
     margin-left: 35px;
+    font-size: 1.25rem;
   }
 
   .contact-reason {
@@ -401,7 +401,7 @@
     padding: 4rem;
     font-weight: 700;
     font-size: 1.5rem;
-    line-height: 35px;
+    line-height: 2rem;
   }
 
   .activities {
@@ -452,7 +452,7 @@
 
 @media screen and (min-width: 1024px) {
 
-  .main section{
+  .main section {
     width: 90%;
     margin-left: 5%;
     margin-right: 5%;

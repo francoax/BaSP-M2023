@@ -27,7 +27,7 @@
   margin-bottom: 25px;
 }
 
-.navbar>.var-items>li:nth-child(4) {
+.navbar >.var-items > li:nth-child(4) {
   display: none;
 }
 
@@ -133,7 +133,7 @@
     margin-top: 0;
   }
 
-  .navbar>.var-items>li:nth-child(4) {
+  .navbar >.var-items >li:nth-child(4) {
     display: flex;
     margin-bottom: 0;
   }
@@ -184,7 +184,7 @@
     width: 80%;
   }
 
-  .var-items> li:nth-child(1) > .btn {
+  .var-items > li:nth-child(1) > .btn {
     font-size: 1.8rem;
   }
 
