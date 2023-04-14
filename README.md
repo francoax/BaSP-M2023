@@ -33,6 +33,10 @@ Steps to visualize the sidebar on mobile:
   }
 ```
 
+## Week 05
+On this week we started learning about JavaScript ES5.
+
+[GitHub-Page](https://francoax.github.io/BaSP-M2023/Week-05/)
 ## Authors
 - Franco Duarte
 
