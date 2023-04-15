@@ -1,4 +1,6 @@
-console.log("-------------------EXERCISE 2 : STRINGS-------------------");
+console.log('--------------------------------------');
+console.log('\tEXERCISE 2: STRINGS');
+console.log('--------------------------------------');
 
 /* a. Crear una variable de tipo string con al menos 10 caracteres y convertir todo el texto en mayúscula
       (utilizar toUpperCase).
@@ -50,7 +52,7 @@ console.log(finalString);
       Encontrar la posición del primer espacio en blanco y guardarla en una variable (utilizar indexOf). 
 */
 
-console.log('- Exercise 2.e: ');
+console.log('\n- Exercise 2.e: ');
 
 var myString = 'ThisStringHas gaps';
 var gapIndex = myString.indexOf(' ');
@@ -63,7 +65,7 @@ console.log(gapIndex);
    el operador +). 
 */
 
-console.log('- Exercise 2.f: ');
+console.log('\n- Exercise 2.f: ');
 
 var myString = 'argentiNosAurus quetzaLcoaTlus';
 var gap = myString.indexOf(' ');
