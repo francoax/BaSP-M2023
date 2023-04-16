@@ -24,8 +24,8 @@ console.log(result);
 console.log('\n- Exercise 6.b: ');
 
 function suma(n1, n2) {
-	if (isNaN(n1) || isNaN(n2)) {
-		console.error('Uno de los parametros no es un numero.');
+	if (typeof n1 !== 'number' || typeof n2 !== 'number') {
+		alert('One of the parameters wasnt a number');
 		return NaN;
 	}
 	return n1 + n2;
@@ -58,16 +58,16 @@ console.log(validateInteger(5));
 console.log('\n- Exercise 6.d: ');
 
 function addNumbers(n1, n2) {
-	if (isNaN(n1) || isNaN(n2)) {
-		console.error('Uno de los parametros no es un numero.');
+	if (typeof n1 !== 'number' || typeof n2 !== 'number') {
+		alert('The number ' + n + ' wasnt an integer');
 		return NaN;
 	}
 	if (!validateInteger(n1)) {
-		console.error('El numero ' + n1 + ' no era entero.');
+		alert('The number ' + n1 + ' wasnt an integer');
 		return Math.round(n1);
 	}
 	if (!validateInteger(n2)) {
-		console.error('El numero ' + n2 + ' no era entero.');
+		alert('The number ' + n2 + ' wasnt an integer');
 		return Math.round(n2);
 	}
 	return n1 + n2;
@@ -83,26 +83,28 @@ console.log(result);
 
 console.log('\n- Exercise 6.e: ');
 
-function isNotFloat(n) {
-	if (!validateInteger(n)) {
-		console.error('El numero ' + n + ' no era entero.');
-		return false;
+function validateNumbers(n1, n2) {
+	if (typeof n1 !== 'number' || typeof n2 !== 'number') {
+		alert('One of the numbers wasnt an integer');
+		return NaN;
+	}
+	if (!validateInteger(n1)) {
+		alert('The number ' + n1 + ' wasnt an integer');
+		return Math.round(n1);
+	}
+	if (!validateInteger(n2)) {
+		alert('The number ' + n2 + ' wasnt an integer');
+		return Math.round(n2);
 	}
 	return true;
 }
 
-function addNumbersE(n1, n2) {
-	if (isNaN(n1) || isNaN(n2)) {
-		console.error('Uno de los parametros no es un numero.');
-		return NaN;
-	}
-	if (!isNotFloat(n1)) {
-		return 'Redondeado a ' + Math.round(n1);
-	}
-	if (!isNotFloat(n2)) {
-		return 'Redondeado a ' + Math.round(n2);
+function addDefinitive(n1, n2) {
+	var validation = validateNumbers(n1, n2);
+	if (typeof validation === 'number') {
+		return validation;
 	}
 	return n1 + n2;
 }
 
-console.log(addNumbersE(2, 4.5));
+console.log(addDefinitive(2, 'a'));

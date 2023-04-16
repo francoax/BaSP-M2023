@@ -11,7 +11,7 @@ console.log('- Exercise 5.a: ');
 var myArray = ['radium', 'rocket', 'rave', 'the', 'best'];
 
 for (var i = 0; i < myArray.length; i++) {
-  console.log(myArray[i]);
+  alert(myArray[i]);
 }
 
 /* b. Al array anterior convertir la primera letra de cada palabra en mayúscula y mostrar una alerta por cada palabra
@@ -21,7 +21,7 @@ for (var i = 0; i < myArray.length; i++) {
 console.log('\n- Exercise 5.b: ');
 
 for (var i = 0; i < myArray.length; i++) {
-  console.log(myArray[i][0].toUpperCase() + myArray[i].substring(1));
+  alert(myArray[i][0].toUpperCase() + myArray[i].substring(1));
 }
 
 /* c. Crear una variable llamada “sentence” que tenga un string vacío, luego al array del punto a) recorrerlo con un
@@ -34,10 +34,15 @@ console.log('\n- Exercise 5.c: ');
 var sentence = '';
 
 for (var i = 0; i < myArray.length; i++) {
-  sentence += ' ' + myArray[i];
+  if(i === 0) {
+    sentence += myArray[i];
+  } else {
+    sentence += ' ' + myArray[i];
+  }
 }
 
 console.log(sentence);
+console.log(sentence.length);
 
 /* d. Crear un array vacío y con un bucle for de 10 repeticiones. Llenar el array con el número de la repetición,
       es decir que al final de la ejecución del bucle for debería haber 10 elementos dentro del array, desde el número
