@@ -54,14 +54,13 @@ input[type="radio"]:checked {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 684px;
+  min-height: 684px;
   margin-top: 69px;
   background: url('../img/man-fit.jpg') no-repeat;
   background-position: center;
 }
 
 .help-guide-section h2 {
-  width: 279px;
   font-size: 40px;
   color: #EBECF0;
 }
@@ -74,14 +73,7 @@ input[type="radio"]:checked {
   line-height: 18px;
 }
 
-.help-guide-section .content {
-  margin-top: 39px;
-}
-
 .contact-section {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
   margin-top: 38px;
 }
 
@@ -109,8 +101,8 @@ input[type="radio"]:checked {
   margin-left: 35px;
   margin-bottom: 15px;
   font-weight: 700;
-  font-size: 14px;
-  line-height: 16px;;
+  font-size: 0.875rem;
+  line-height: 16px;
   color: #373867;
 }
 
@@ -130,9 +122,11 @@ input[type="radio"]:checked {
   margin-top: 43px;
 }
 
-.contact-reason .label:nth-of-type(1) {
+.contact-reason h3 {
   margin-left: 35px;
-  margin-bottom: 29px;
+  margin-bottom: 30px;
+  font-size: 0.875rem;
+  font-weight: 700;
 }
 
 .contact-reason .label {
@@ -216,15 +210,15 @@ input[type="radio"]:checked {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 431px;
+  min-height: 431px;
   background: url('../img/girl-fit.png') no-repeat;
   background-position: center;
 }
 
 .history-section p {
   padding: 0px 20px;
-  font-weight: 600;
-  font-size: 20px;
+  font-weight: 500;
+  font-size: 1.25rem;
   line-height: 23px;
   text-align: justify;
   text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.5);
@@ -306,19 +300,24 @@ input[type="radio"]:checked {
 }
 
 @media (min-width: 480px) {
-
   .main {
     flex-grow: 1;
   }
 
   .help-guide-section {
-    height: 1194px;
     margin-top: 119px;
     background-size: cover;
   }
 
+  .help-guide-section h2 {
+    width: auto;
+    margin: 7rem 2rem 2rem;
+    font-size: 2.5rem;
+  }
+
   .health-info-section p {
-    margin-top: 30px;
+    padding: 4rem;
+    padding-bottom: 0;
     font-weight: 600;
     font-size: 1.25rem;
     line-height: 1.4rem;
@@ -368,12 +367,9 @@ input[type="radio"]:checked {
     font-size: 1.25rem;
   }
 
-  .contact-reason {
-    margin-top: 100px;
-  }
-  
-  .contact-reason .label:nth-of-type(1) {
-    margin-bottom: 60px;
+  .contact-reason h3 {
+    margin-bottom: 50px;
+    font-size: 1.25rem;
   }
 
   .contact-reason .label input {
@@ -411,10 +407,10 @@ input[type="radio"]:checked {
   }
 
   .history-section .content {
-    height: 716px;
+    min-height: 716px;
   }
 
-  .content p {
+  .history-section .content p {
     padding: 4rem;
     font-weight: 700;
     font-size: 1.5rem;
@@ -457,7 +453,6 @@ input[type="radio"]:checked {
     margin-right: 15px;
     margin-top: 15px;
   }
-
 }
 
 @media screen and (min-width:768px) {
@@ -468,7 +463,6 @@ input[type="radio"]:checked {
 }
 
 @media screen and (min-width: 1024px) {
-
   .main section {
     width: 90%;
     margin-left: 5%;
@@ -483,8 +477,8 @@ input[type="radio"]:checked {
   }
 
   .health-info-section {
-    height: 48rem;
     align-items: flex-start;
+    margin-bottom: 70px;
   }
 
   .health-content {
@@ -493,7 +487,7 @@ input[type="radio"]:checked {
 
   .health-content p {
     order: 0;
-    padding: 0;
+    padding: 2.5rem 0;
   }
 
   .health-content img {
@@ -501,6 +495,7 @@ input[type="radio"]:checked {
   }
 
   .help-guide-section {
+    justify-content: unset;
     height: 54rem;
     margin-top: 40px;
     margin-bottom: 65px;
@@ -508,18 +503,21 @@ input[type="radio"]:checked {
 
   .help-guide-section h2 {
     width: auto;
+    margin-top: 7.75rem;
+    margin-bottom: 5.93rem;
   }
 
   .help-guide-section .content {
     display: flex;
-    flex-direction: row;
     flex-wrap: wrap;
-    justify-content: center;
-    max-width: 80%;
+    justify-content: space-around;
+    max-width: 60rem;
+    height: 30rem;
+    margin: 0;
   }
 
   .help-guide-section .content .btn {
-    margin: 2rem;
+    margin: 0;
   }
 
   .contact-section {
@@ -548,8 +546,9 @@ input[type="radio"]:checked {
     margin-top: 30px;
   }
 
-  .contact-reason .label:nth-of-type(1) {
+  .contact-reason h3 {
     margin-left: 0;
+    font-size: 1.5rem;
   }
 
   .contact-message textarea {
@@ -563,13 +562,14 @@ input[type="radio"]:checked {
   }
 
   .history-section .content {
-    height: 47rem;
-    background-position: unset;
+    min-height: 765px;
+    background-image: url('../img/girl-fit-no-blur.png');
+    background-size: cover;
   }
 
-  .history-section p {
-    font-size: 30px;
+  .history-section .content p {
     padding: 9rem;
+    font-size: 1.875rem;
   }
 
   .history-section h2 {
@@ -580,6 +580,7 @@ input[type="radio"]:checked {
   .activity-member-section {
     flex-direction: row;
     align-items: unset;
+    justify-content: center;
   }
 
   .activities {
@@ -588,7 +589,7 @@ input[type="radio"]:checked {
   }
 
   .activities h2, .memberships h2 {
-    font-size: 2rem;
+    font-size: 2.5rem;
   }
 
   .activities .activities-list {
@@ -602,7 +603,7 @@ input[type="radio"]:checked {
 
   .list-item span {
     margin-left: 5rem;
-    font-size: 1.5rem;
+    font-size: 1.8rem;
   }
 
   .memberships h2 {
@@ -621,10 +622,10 @@ input[type="radio"]:checked {
   }
 
   .content-type h3 {
-    font-size: 1.5rem;
+    font-size: 1.8rem;
   }
 
   .content-type ul {
-    font-size: 1rem;
+    font-size: 1.20rem;
   }
 }

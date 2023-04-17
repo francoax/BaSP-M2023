@@ -1,18 +1,12 @@
 .footer {
-  width: 100%;
-  margin-top: 111px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  height: 3rem;
   background: #373867;
 }
 
-.footer-content {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 48px;
-}
-
-.footer-content p {
-  margin-right: 15px;
+.footer p {
   font-weight: 400;
   font-size: 0.75rem;
   line-height: 14px;
@@ -21,51 +15,46 @@
   mix-blend-mode: color-burn;
 }
 
-.social img {
+.media .social img {
   width: 20px;
   height: 20px;
+  margin: 0px 2.5px;
 }
 
 @media (min-width: 480px) {
   .footer {
     flex-grow: 1;
+    height: 6.5rem;
   }
-}
-
-@media screen and (min-width: 768px) {
-  .footer-content p {
+  .footer p {
+    padding: 2rem;
     font-weight: 700;
-    font-size: 0.875rem;
-    line-height: 1rem;
+    font-size: 0.8rem;
   }
   
-  .social img {
-    width: 35px;
-    height: 35px;
-    margin: 0px 5px;
+  .media .social img {
+    width: 30px;
+    height: 30px;
   }
-
-  .footer-content {
+  
+  .footer {
     height: 107px;
   }
 }
 
+@media (min-width: 768px) {
+  .footer p {
+    font-size: 1rem;
+  }
+}
+
 @media screen and (min-width: 1024px) {
-  .footer-content {
-    justify-content: space-between;
+  .footer p {
+    font-size: 1rem;
   }
 
-  .footer-content p {
-    margin-left: 60px;
-    font-size: 1.25rem;
-  }
-
-  .social img {
-    width: 60px;
+  .media .social img {
+    width: 50px;
     height: 50px;
-  }
-
-  .footer-content div {
-    margin-right: 2rem;
   }
 }
