@@ -9,8 +9,18 @@ console.log('--------------------------------------');
 
 console.log('- Exercise 3.a: ');
 
-var months = ["Enero", "Febrero", "Marzo", "Abril", "Mayo", "Junio", "Julio", 
-              "Agosto", "Septiembre", "Octubre", "Noviembre", "Diciembre"];
+var months = ["Enero", 
+            "Febrero", 
+            "Marzo", 
+            "Abril", 
+            "Mayo", 
+            "Junio", 
+            "Julio", 
+            "Agosto", 
+            "Septiembre", 
+            "Octubre", 
+            "Noviembre", 
+            "Diciembre"];
 
 console.log('Mes 5: ' + months[4] + ' y Mes 11: ' + months[10]);
 
@@ -26,8 +36,18 @@ console.log(sorted);
 
 console.log('\n- Exercise 3.c: ');
 
-var months = ["Enero", "Febrero", "Marzo", "Abril", "Mayo", "Junio", "Julio", 
-              "Agosto", "Septiembre", "Octubre", "Noviembre", "Diciembre"];
+var months = ["Enero", 
+            "Febrero", 
+            "Marzo", 
+            "Abril", 
+            "Mayo", 
+            "Junio", 
+            "Julio", 
+            "Agosto", 
+            "Septiembre", 
+            "Octubre", 
+            "Noviembre", 
+            "Diciembre"];
 
 var element1 = 'Hello';
 var element2 = 'World!';
@@ -41,8 +61,18 @@ console.log(months);
 
 console.log('\n- Exercise 3.d: ');
 
-var months = ["Enero", "Febrero", "Marzo", "Abril", "Mayo", "Junio", "Julio", 
-              "Agosto", "Septiembre", "Octubre", "Noviembre", "Diciembre"];
+var months = ["Enero", 
+            "Febrero", 
+            "Marzo", 
+            "Abril", 
+            "Mayo", 
+            "Junio", 
+            "Julio", 
+            "Agosto", 
+            "Septiembre", 
+            "Octubre", 
+            "Noviembre", 
+            "Diciembre"];
 
 var shifted = months.shift();
 var popped = months.pop();
@@ -53,8 +83,18 @@ console.log('First element removed: "' + shifted + '" and last element removed: 
 
 console.log('\n- Exercise 3.e: ');
 
-var months = ["Enero", "Febrero", "Marzo", "Abril", "Mayo", "Junio", "Julio", 
-              "Agosto", "Septiembre", "Octubre", "Noviembre", "Diciembre"];
+var months = ["Enero", 
+            "Febrero", 
+            "Marzo", 
+            "Abril", 
+            "Mayo", 
+            "Junio", 
+            "Julio", 
+            "Agosto", 
+            "Septiembre", 
+            "Octubre", 
+            "Noviembre", 
+            "Diciembre"];
 
 var reversed = months.reverse();
 
@@ -64,8 +104,18 @@ console.log(reversed);
 
 console.log('\n- Exercise 3.f: ');
 
-var months = ["Enero", "Febrero", "Marzo", "Abril", "Mayo", "Junio", "Julio", 
-              "Agosto", "Septiembre", "Octubre", "Noviembre", "Diciembre"];
+var months = ["Enero", 
+            "Febrero", 
+            "Marzo", 
+            "Abril", 
+            "Mayo", 
+            "Junio", 
+            "Julio", 
+            "Agosto", 
+            "Septiembre", 
+            "Octubre", 
+            "Noviembre", 
+            "Diciembre"];
 
 var monthsString = months.join('-');
 
@@ -75,8 +125,18 @@ console.log(monthsString);
 
 console.log('\n- Exercise 3.g: ');
 
-var months = ["Enero", "Febrero", "Marzo", "Abril", "Mayo", "Junio", "Julio", 
-              "Agosto", "Septiembre", "Octubre", "Noviembre", "Diciembre"];
+var months = ["Enero", 
+            "Febrero", 
+            "Marzo", 
+            "Abril", 
+            "Mayo", 
+            "Junio", 
+            "Julio", 
+            "Agosto", 
+            "Septiembre", 
+            "Octubre", 
+            "Noviembre", 
+            "Diciembre"];
 
 var copy = months.slice(4,11);
 

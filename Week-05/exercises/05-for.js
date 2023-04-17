@@ -41,8 +41,7 @@ for (var i = 0; i < myArray.length; i++) {
   }
 }
 
-console.log(sentence);
-console.log(sentence.length);
+alert(sentence);
 
 /* d. Crear un array vacío y con un bucle for de 10 repeticiones. Llenar el array con el número de la repetición,
       es decir que al final de la ejecución del bucle for debería haber 10 elementos dentro del array, desde el número

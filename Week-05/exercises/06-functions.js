@@ -42,7 +42,7 @@ console.log(result);
 console.log('\n- Exercise 6.c: ');
 
 function validateInteger (n) {
-	if (typeof n === 'number' && n % 1 === 0){
+	if (typeof n === 'number' && n % 1 === 0) {
 		return true;
 	}
 	return false;
@@ -85,7 +85,7 @@ console.log('\n- Exercise 6.e: ');
 
 function validateNumbers(n1, n2) {
 	if (typeof n1 !== 'number' || typeof n2 !== 'number') {
-		alert('One of the numbers wasnt an integer');
+		alert('One of the numbers wasnt a number');
 		return NaN;
 	}
 	if (!validateInteger(n1)) {
@@ -107,4 +107,4 @@ function addDefinitive(n1, n2) {
 	return n1 + n2;
 }
 
-console.log(addDefinitive(2, 'a'));
+console.log(addDefinitive(2, 4));
