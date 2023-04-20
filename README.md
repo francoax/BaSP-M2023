@@ -37,6 +37,11 @@ Steps to visualize the sidebar on mobile:
 On this week we started learning about JavaScript ES5.
 
 [GitHub-Page](https://francoax.github.io/BaSP-M2023/Week-05/)
+
+## Week 06
+We developed the Log In and Sign Up of the application, with validations on JavaScript ES5.
+
+[GitHub-Page](https://francoax.github.io/BaSP-M2023/Week-06/views/index.html)
 ## Authors
 - Franco Duarte
 

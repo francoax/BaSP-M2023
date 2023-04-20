@@ -1,0 +1,145 @@
+.form-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.form-container .icon {
+  width: 234px;
+  margin-top: 15px;
+  margin-bottom: 34px;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  width: 260px;
+  height: 96px;
+}
+
+.form-group .form-label {
+  margin-bottom: 7px;
+  font-weight: 700;
+  line-height: 16px;
+  color: #373867;
+}
+
+.form-label img {
+  width: 1em;
+}
+
+.form-group .form-input {
+  height: 37px;
+  padding: 10px 12px;
+  border: 1px solid #373867;
+  border-radius: 4px;
+}
+
+.form-group .form-input::placeholder {
+  font-weight: 700;
+  color: #373867;
+  opacity: 0.5;
+}
+
+#terms-and-conditions a {
+  text-decoration: none;
+  color: #011AF9;
+}
+
+#check-terms[type="checkbox"] {
+  margin: 0;
+  margin-left: 10px;
+  width: 1.25em;
+  height: 1.25em;
+  border: 2px solid #34636E;
+  border-radius: 4px;
+  background: #F6F0E3;
+  appearance: none;
+}
+
+#check-terms[type="checkbox"]:checked {
+  background: #34636E;
+}
+
+#btn-submit {
+  display: block;
+  margin: 15px auto;
+  width: 210px;
+  height: 76px;
+  background-color: #AACE9B;
+  border: 1px solid #373867;
+  border-radius: 5px;
+  font-size: 30px;
+  line-height: 35px;
+  color: #373867;
+}
+
+  .nav-options {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+.nav-options a {
+  margin: 5px;
+  text-decoration: underline;
+  color: #011AF9;
+}
+
+.side-background {
+  display: none;
+}
+
+@media (min-width: 480px) {
+  body {
+    display: block;
+  }
+}
+
+@media (min-width: 768px) {
+  .side-background {
+    display: block;
+    padding: 10px;
+    width: 50%;
+    background-image: url('../img/signup-image-side.jpg');
+    background-size: cover;
+  }
+
+  .container {
+    display: flex;
+  }
+
+  .form-container {
+    width: 50%;
+  }
+}
+
+@media (min-width: 1024px) {
+  .form-container {
+    width: 75%;
+  }
+
+  #sign-up-form {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    max-width: 38.25em;
+  }
+
+  .form-section {
+    padding: 0px 20px;
+  }
+
+  .side-background img {
+    float: right;
+    width: 80%;
+  }
+
+  .submit-terms {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-basis: 100%;
+  }
+}
