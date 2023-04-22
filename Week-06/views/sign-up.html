@@ -7,12 +7,12 @@
     <link rel="stylesheet" href="../css/reset.css">
     <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="../css/sign-up.css">
-    <script src="../js/sign-up.js"></script>
     <title>Document</title>
   </head>
   <body>
     <div class="container">
       <section class="form-container">
+        <a href="index.html" class="back-btn"><img src="../img/back-btn.png" alt="Back button to home"></a>
         <img src="../img/rr-logo-signup.png" alt="Radium rocket icon" class="icon">
         <form id="sign-up-form" action="">
           <fieldset class="form-group">
@@ -41,14 +41,14 @@
               Date of birth
               <img src="../img/icon-question.png" alt="question icon">
             </label>
-            <input id="date-born" type="text" class="form-input" placeholder="Complete the field">
+            <input id="date-born" type="date" class="form-input" placeholder="Complete the field">
           </fieldset>
           <fieldset class="form-group">
             <label class="form-label" for="tel">
               Telephone
               <img src="../img/icon-question.png" alt="question icon">
             </label>
-            <input id="tel" type="text" class="form-input" placeholder="Complete the field">
+            <input id="tel" type="tel" class="form-input" placeholder="Complete the field">
           </fieldset>
           <fieldset class="form-group">
             <label class="form-label" for="direction">
@@ -76,21 +76,21 @@
               Email
               <img src="../img/icon-question.png" alt="question icon">
             </label>
-            <input id="email" type="text" class="form-input" placeholder="Complete the field">
+            <input id="email" type="email" class="form-input" placeholder="Complete the field">
           </fieldset>
           <fieldset class="form-group">
             <label class="form-label" for="password">
               Password
               <img src="../img/icon-question.png" alt="question icon">
             </label>
-            <input id="password" type="text" class="form-input" placeholder="Complete the field">
+            <input id="password" type="password" class="form-input" placeholder="Complete the field">
           </fieldset>
           <fieldset class="form-group">
             <label class="form-label" for="repeated-password">
               Repeat password
               <img src="../img/icon-question.png" alt="question icon">
             </label>
-            <input id="repeated-password" type="text" class="form-input" placeholder="Complete the field">
+            <input id="repeated-password" type="password" class="form-input" placeholder="Complete the field">
           </fieldset>
           <div class="submit-terms">
             <fieldset id="terms-and-conditions">
@@ -109,5 +109,6 @@
         <img src="../img/rocket-logo-signup.png" alt="Radium rocket logo">
       </section>
     </div>
+    <script src="../js/sign-up.js"></script>
   </body>
 </html>
