@@ -43,6 +43,29 @@ img {
   width: 100%;
 }
 
+.form-group .input-error {
+  border: 1px solid #FF3E1D;
+}
+
+.form-group .input-error::placeholder {
+  color: #FF3E1D;
+}
+
+.form-group .label-error {
+  color: #FF3E1D;
+}
+
+.errorMessage {
+  display: block;
+  padding-top: 5px;
+  color: #FF3E1D;
+  font-size: 0.75rem;
+}
+
+.is-hidden {
+  display: none;
+}
+
 @media (min-width: 480px) {
   body {
     display: flex;
