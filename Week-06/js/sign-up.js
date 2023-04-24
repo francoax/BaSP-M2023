@@ -315,7 +315,12 @@ var validateForm = function(form) {
       })
       alert('Oops, I see you have errors: \n' + message);
     } else {
-      alert('Nice, you got it')
+      for (var i = 0; i < formGroups.length; i++) {
+        var input = formGroups[i].querySelector('.form-input').value;
+        var label = formGroups[i].querySelector('.form-label').textContent;
+        message += label.trim() + ': ' + input + '\n';
+      }
+      alert('Nice, you got it: \n' + message);
     }
   });
 }
