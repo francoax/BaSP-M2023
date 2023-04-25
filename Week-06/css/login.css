@@ -25,12 +25,13 @@
   width: 317px;
 }
 
-.back-btn {
-  position: static;
-}
-
 .fieldset-icon-left {
   display: flex;
+}
+
+.back-btn {
+  top: 0;
+  left: 0;
 }
 
 .fieldset-icon-left img {
@@ -52,8 +53,8 @@
   max-width: 291px;
 }
 
-.help-options a:last-child {
-  padding: 10px;
+.help-options a {
+  padding: 3px;
 }
 
 .keep-sign label {
@@ -89,7 +90,7 @@
   .side-background {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: flex-end;
   }
   .side-background .rocket-logo {
     width: 80%;
