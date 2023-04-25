@@ -30,32 +30,6 @@ var validateForm = function(form) {
             this.errorMessage = 'Password must not have empty spaces';
             return false;
           }
-          // if(input.value.length < 8) {
-          //   this.errorMessage = 'Password must have 8 or more caracters';
-          //   return false
-          // }
-          // var hasMayus = false;
-          // for (var i = 0; i < input.value.length; i++) {
-          //   var char = input.value.charCodeAt(i);
-          //   if((char >= 65 && char <= 90)) {
-          //     hasMayus = true;
-          //   }
-          // }
-          // if(!hasMayus) {
-          //   this.errorMessage = 'Password must contain one uppercase letter';
-          //   return false;
-          // }
-          // var numbers = 0;
-          // for (var i = 0; i < input.value.length; i++) {
-          //   var char = input.value.charCodeAt(i);
-          //   if((char >= 48 && char <= 57)) {
-          //     numbers++
-          //   }
-          // }
-          // if(numbers < 2) {
-          //   this.errorMessage = 'Password must contain two or more numbers';
-          //   return false;
-          // }
         }
         return true;
       }
@@ -93,11 +67,10 @@ var validateForm = function(form) {
   })
 
   formElement.addEventListener('submit', function(e) {
+    e.preventDefault();
     var inputsErrors = [];
     var message = '';
-    e.preventDefault();
     var formGroups = Array.from(formElement.querySelectorAll('.form-group'));
-    console.log(formGroups);
     for (var i = 0; i < formGroups.length; i++) {
       var error = validateFormGroup(formGroups[i]);
       if(!error) {

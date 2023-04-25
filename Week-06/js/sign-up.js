@@ -85,6 +85,18 @@ var validateForm = function(form) {
           this.errorMessage = 'Date born is required';
           return false;
         }
+        if(input.value) {
+          var date = input.value.split('-');
+          var now = new Date();
+          if(parseInt(date[0]) > now.getFullYear()) {
+            this.errorMessage = 'Date year not valid.';
+            return false;
+          }
+          if((parseInt(date[0]) < 1950) || (parseInt(date[0]) > 2010)) {
+            this.errorMessage = 'Only years between 1950 and 2010';
+            return false;
+          }
+        }
         return true;
       }
     },
@@ -123,6 +135,18 @@ var validateForm = function(form) {
           var gap = input.value.lastIndexOf(' ');
           var street = input.value.substring(0, gap);
           var number = input.value.substring(gap + 1);
+          for (var i = 0; i < street.length; i++) {
+            var char = street.charCodeAt(i);
+            if(
+              !(char >= 65 && char <= 90)
+              && !(char >= 97 && char <= 122)
+              && !(char >=48 && char <=57)
+              && !(char === 46)
+              && !(char === 32)) {
+              this.errorMessage = 'Direction street have invalid caracters';
+              return false;
+            }
+          }
           if(street.length < 5) {
             this.errorMessage = 'Direction street must have more than 5 letters.';
             return false;
@@ -147,7 +171,10 @@ var validateForm = function(form) {
           var notAlphanumeric = false;
           for (var i = 0; i < input.value.length; i++) {
             var char = input.value.charCodeAt(i);
-            if(!(char >= 65 && char <= 90) && !(char >= 97 && char <= 122) && !(char >= 48 && char <=57)) {
+            if(
+              !(char >= 65 && char <= 90)
+              && !(char >= 97 && char <= 122)
+              && !(char >= 48 && char <=57)) {
               notAlphanumeric = true;
             }
           }
@@ -316,9 +343,15 @@ var validateForm = function(form) {
       alert('Oops, I see you have errors: \n' + message);
     } else {
       for (var i = 0; i < formGroups.length; i++) {
-        var input = formGroups[i].querySelector('.form-input').value;
+        var input = formGroups[i].querySelector('.form-input');
         var label = formGroups[i].querySelector('.form-label').textContent;
-        message += label.trim() + ': ' + input + '\n';
+        if(input.getAttribute('id') !== 'date-born') {
+          message += label.trim() + ': ' + input.value + '\n';
+        } else {
+          var date = input.value.split('-');
+          date = date[2] + '/' + date[1] + '/' + date[0];
+          message += label.trim() + ': ' + date + '\n';
+        }
       }
       alert('Nice, you got it: \n' + message);
     }
