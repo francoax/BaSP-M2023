@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/login.css">
+    <title>Login</title>
+  </head>
+  <body>
+    <div class="container">
+      <a href="index.html" class="back-btn"><img src="../img/back-btn.png" alt="Back button to home"></a>
+      <section class="side-background">
+        <img src="../img/rocket-logo.png" alt="Radium rocket logo" class="rocket-logo">
+      </section>
+      <section class="form-container">
+        <img src="../img/rr-logo-signup.png" alt="Radium rocket icon" class="icon">
+        <form id="login-form" action="">
+          <div class="fieldset-icon-left">
+            <img src="../img/user-logo.png" alt="User logo">
+            <fieldset class="form-group">
+              <label class="form-label" for="email">
+                Email Address
+              </label>
+              <input id="email" type="text" class="form-input" placeholder="my-email@example.com">
+              <span class="errorMessage"></span>
+            </fieldset>
+          </div>
+          <div class="fieldset-icon-left">
+            <img src="../img/password-logo.png" alt="Password logo">
+            <fieldset class="form-group">
+              <label class="form-label" for="password">
+                Password
+              </label>
+              <input id="password" type="password" class="form-input" placeholder="*********">
+              <span class="errorMessage"></span>
+            </fieldset>
+          </div>
+          <div class="help-options">
+            <fieldset class="keep-sign">
+              <input type="checkbox" id="keep" class="check">
+              <label for="keep">Keep me signed</label>
+            </fieldset>
+            <a href="#">Forgot password?</a>
+            <a href="../views/sign-up.html">Don't have an account? Sign up</a>
+            <a href="../views/index.html">Back to home</a>
+          </div>
+          <input id="btn-submit" type="submit" value="Login">
+        </form>
+      </section>
+    </div>
+    <script src="../js/login.js"></script>
+  </body>
+</html>

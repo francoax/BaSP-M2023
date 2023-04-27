@@ -1,0 +1,78 @@
+.form-container .icon {
+  width: 234px;
+  margin-top: 15px;
+  margin-bottom: 34px;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+}
+
+.form-label img {
+  width: 1em;
+}
+
+#terms-and-conditions a {
+  text-decoration: none;
+  color: #011AF9;
+}
+
+#btn-submit {
+  background-color: #AACE9B;
+}
+
+.nav-options {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.nav-options a {
+  margin: 5px;
+  text-decoration: underline;
+  color: #011AF9;
+}
+
+.side-background {
+  display: none;
+}
+
+@media (min-width: 480px) {
+  body {
+    display: block;
+  }
+}
+
+@media (min-width: 768px) {
+  .side-background {
+    display: block;
+    padding: 10px;
+    width: 50%;
+    background-image: url('../img/signup-image-side.jpg');
+    background-size: cover;
+    background-position: center;
+  }
+}
+
+@media (min-width: 1024px) {
+  .form-container {
+    width: 75%;
+  }
+
+  #sign-up-form {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    max-width: 38.25em;
+  }
+
+  .side-background img {
+    float: right;
+    width: 80%;
+  }
+
+  .submit-terms {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-basis: 100%;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  }
+}

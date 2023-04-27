@@ -1,0 +1,98 @@
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.side-background {
+  display: none;
+}
+
+#login-form {
+  margin-top: 40px;
+}
+
+.form-group img {
+  width: 1.25em;
+}
+
+.form-container {
+  align-self: center;
+}
+
+.form-container .icon {
+  width: 317px;
+}
+
+.fieldset-icon-left {
+  display: flex;
+}
+
+.back-btn {
+  top: 0;
+  left: 0;
+}
+
+.fieldset-icon-left img {
+  width: 1em;
+  height: 1em;
+  margin-top: 34.5px;
+  margin-right: 15px;
+}
+
+#btn-submit {
+  font-weight: 600;
+}
+
+.help-options {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  max-width: 291px;
+}
+
+.help-options a {
+  padding: 3px;
+}
+
+.keep-sign label {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #000;
+}
+
+@media (min-width: 480px) {
+  body {
+    display: block;
+  }
+}
+
+@media (min-width: 768px) {
+  .side-background {
+    width: 50%;
+    background-image: url('../img/login-image-side.jpg');
+    background-position: center;
+    background-size: cover;
+  }
+  .form-container {
+    width: 50%;
+  }
+}
+
+@media (min-width: 1024px) {
+  .container {
+    align-items: unset;
+    justify-content: unset;
+  }
+
+  .side-background {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+  }
+  .side-background .rocket-logo {
+    width: 80%;
+  }
+}

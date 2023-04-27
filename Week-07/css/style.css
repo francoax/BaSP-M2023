@@ -1,0 +1,166 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  color: #373867;
+  overflow-x: hidden;
+}
+
+.btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 14px 36px;
+  border-radius: 5px;
+  border: 1px solid #373867;
+  background-color: #EBECF0;
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: 700;
+  text-decoration: none;
+  color: #373867;
+}
+
+.is-primary {
+  background-color: #373867;
+  color: #F7FBF5;
+}
+
+h2 {
+  font-size: 1.875rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+img {
+  width: 100%;
+}
+
+.main-container {
+  width: 100%;
+}
+
+.form-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  width: 260px;
+  height: 96px;
+}
+
+.form-label {
+  margin-bottom: 7px;
+  font-weight: 700;
+  line-height: 16px;
+  color: #373867;
+}
+
+.form-input {
+  height: 37px;
+  padding: 10px 12px;
+  border: 1px solid #373867;
+  border-radius: 4px;
+}
+
+.form-input::placeholder {
+  font-weight: 700;
+  color: #373867;
+  opacity: 0.5;
+}
+
+.form-group .input-error {
+  border: 1px solid #FF3E1D;
+}
+
+.form-group .input-error::placeholder {
+  color: #FF3E1D;
+}
+
+.form-group .label-error {
+  color: #FF3E1D;
+}
+
+.errorMessage {
+  display: block;
+  padding-top: 5px;
+  color: #FF3E1D;
+  font-size: 0.75rem;
+}
+
+.is-hidden {
+  display: none;
+}
+
+.back-btn {
+  position: absolute;
+  align-self: self-start;
+}
+
+#btn-submit {
+  display: block;
+  margin: 15px auto;
+  width: 210px;
+  height: 76px;
+  border: 1px solid #373867;
+  border-radius: 5px;
+  font-size: 30px;
+  line-height: 35px;
+  color: #373867;
+}
+
+.check[type="checkbox"] {
+  margin: 0;
+  margin-left: 10px;
+  width: 1.25em;
+  height: 1.25em;
+  border: 2px solid #34636E;
+  border-radius: 4px;
+  background: #F6F0E3;
+  appearance: none;
+}
+
+.check[type="checkbox"]:checked {
+  background: #34636E;
+}
+
+@media (min-width: 480px) {
+  body {
+    display: flex;
+    flex-direction: row;
+    height: 100vh;
+  }
+
+  .main-container {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    min-height: 100vh;
+    margin-left: 20%;
+  }
+}
+
+@media (min-width: 768px) {
+  .container {
+    display: flex;
+  }
+
+  .side-background {
+    display: block;
+    padding: 10px;
+    width: 50%;
+    background-size: cover;
+    background-position: center;
+  }
+
+  .form-container {
+    width: 50%;
+  }
+}

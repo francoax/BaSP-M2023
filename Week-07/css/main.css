@@ -1,0 +1,631 @@
+input[type="radio"] {
+  margin: 0;
+  margin-right: 33px;
+  width: 16px;
+  height: 16px;
+  border: 1px solid #34636E;
+  border-radius: 50%;
+  appearance: none;
+  background-color: #fff;
+  font: inherit;
+  color: currentColor;
+}
+
+input[type="radio"]:checked {
+  border: 4px solid #34636E;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+}
+
+.main section {
+  width: 100%;
+}
+
+.health-info-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.health-info-section h2 {
+  padding-top: 63px;
+  font-size: 30px;
+}
+
+.health-content {
+  display: flex;
+  flex-direction: column;
+}
+
+.health-content P {
+  padding: 21px;
+  order: 1;
+  font-size: 0.875rem;
+  font-weight: 400;
+  line-height: 14.06px;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.help-guide-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 684px;
+  margin-top: 69px;
+  background: url('../img/man-fit.jpg') no-repeat;
+  background-position: center;
+}
+
+.help-guide-section h2 {
+  font-size: 40px;
+  color: #EBECF0;
+}
+
+.help-guide-section .btn {
+  width: 227px;
+  height: 69px;
+  margin-top: 30px;
+  font-size: 15px;
+  line-height: 18px;
+}
+
+.contact-section {
+  margin-top: 38px;
+}
+
+.contact-section .container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.container img {
+  width: 40px;
+  height: 40px;
+}
+
+.contact-form {
+  width: 100%;
+  margin-top: 35px;
+}
+
+.contact-form .label {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-left: 35px;
+  margin-bottom: 15px;
+  font-weight: 700;
+  font-size: 0.875rem;
+  line-height: 16px;
+  color: #373867;
+}
+
+.contact-personal-info {
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+}
+
+.contact-personal-info .input {
+  margin-right: 2rem;
+}
+
+.contact-reason {
+  display: flex;
+  flex-direction: column;
+  margin-top: 43px;
+}
+
+.contact-reason h3 {
+  margin-left: 35px;
+  margin-bottom: 30px;
+  font-size: 0.875rem;
+  font-weight: 700;
+}
+
+.contact-reason .label {
+  justify-content: flex-start;
+  margin-left: 0;
+  margin-bottom: 27px;
+}
+
+.contact-reason .label input {
+  margin-left: 24px;
+  margin-right: 30px;
+}
+
+.contact-message textarea {
+  width: 95%;
+  margin-left: 10px;
+  height: 104px;
+  resize: none;
+  border: 1px solid #E0E0E0;
+  border-radius: 4px;
+}
+
+.contact-message textarea::placeholder {
+  padding: 10px 16px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 18px;
+  opacity: 0.5;
+  color: #373867;
+}
+
+.contact-form button {
+  height: 27px;
+  margin-left: 15px;
+  margin-top: 24px;
+  border-radius: 5px;
+  font-weight: 700;
+  font-size: 16px;
+  border: none;
+  color: #373867;
+}
+
+.contact-form button[type="submit"] {
+  width: 166px;
+  background: #AACE9B;
+}
+
+.contact-form button[type='reset'] {
+  width: 96px;
+  background: #FFFFFF;
+  border: 1px solid #373867;
+}
+
+.input {
+  padding-left: 15px;
+  border-radius: 20px;
+  border: 1px solid #000;
+}
+
+.input::placeholder {
+  font-weight: 400;
+  font-size: 0.75rem;
+  line-height: 0.875rem;
+  color: rgba(55, 56, 103, 0.43);
+}
+
+.input-small {
+  height: 28px;
+}
+
+.history-section {
+  margin-top: 71px;
+}
+
+.history-section h2 {
+  margin-bottom: 45px;
+}
+
+.history-section .content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 431px;
+  background: url('../img/girl-fit.png') no-repeat;
+  background-position: center;
+}
+
+.history-section p {
+  padding: 0px 20px;
+  font-weight: 500;
+  font-size: 1.25rem;
+  line-height: 23px;
+  text-align: justify;
+  text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.5);
+  color: #FFFFFF;
+}
+
+.activity-member-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 47px;
+}
+
+.activities {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 50px;
+}
+
+.activities .activities-list {
+  margin-top: 41px;
+}
+
+.activities-list .list-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.list-item span {
+  margin-left: 12px;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 23px;
+}
+
+.activities img {
+  width: 48px;
+  height: 38px;
+}
+
+.memberships {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.memberships h2 {
+  margin-bottom: 40px;
+  align-self: center;
+}
+
+.member-type {
+  display: flex;
+  margin-bottom: 30px;
+}
+
+.member-type img {
+  width: 36px;
+  height: 36px;
+  margin-right: 25px;
+}
+
+.content-type {
+  color: #000;
+}
+
+.content-type h3 {
+  margin-bottom: 15px;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.member-benefits {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  list-style-type: '-';
+}
+
+@media (min-width: 480px) {
+  .main {
+    flex-grow: 1;
+  }
+
+  .help-guide-section {
+    margin-top: 119px;
+    background-size: cover;
+  }
+
+  .help-guide-section h2 {
+    width: auto;
+    margin: 7rem 2rem 2rem;
+    font-size: 2.5rem;
+  }
+
+  .health-info-section p {
+    padding: 4rem;
+    padding-bottom: 0;
+    font-weight: 600;
+    font-size: 1.25rem;
+    line-height: 1.4rem;
+    text-shadow: none;
+  }
+
+  .help-guide-section .btn {
+    width: 351px;
+    height: 107px;
+    margin-top: 0;
+    margin-bottom: 47px;
+    padding: 0;
+    font-size: 1.875rem;
+    line-height: 2rem;
+    text-align: center;
+  }
+
+  .contact-section {
+    align-items: flex-start;
+  }
+
+  .contact-section .input {
+    width: 293px;
+    height: 45px;
+  }
+
+  .contact-section h2 {
+    font-size: 40px;
+  }
+
+  .contact-section .container img {
+    width: 64px;
+    height: 64px;
+  }
+
+  .contact-form {
+    margin-top: 50px;
+  }
+
+  .contact-form .input::placeholder {
+    font-size: 1rem;
+    font-weight: 700;
+  }
+
+  .contact-form .label {
+    margin-left: 35px;
+    font-size: 1.25rem;
+  }
+
+  .contact-reason h3 {
+    margin-bottom: 50px;
+    font-size: 1.25rem;
+  }
+
+  .contact-reason .label input {
+    margin-left: 0;
+  }
+
+  .contact-form input {
+    margin-left: 0;
+  }
+
+  .contact-message {
+    margin-top: 50px;
+  }
+
+  .contact-message textarea {
+    height: auto;
+  }
+  
+
+  .contact-form button {
+    height: 47px;
+    margin-left: 35px;
+  }
+
+  .contact-personal-info .label {
+    margin-bottom: 35px;
+  }
+
+  .history-section {
+    margin-top: 125px;
+  }
+
+  .history-section h2 {
+    font-size: 2.5rem;
+  }
+
+  .history-section .content {
+    min-height: 716px;
+  }
+
+  .history-section .content p {
+    padding: 4rem;
+    font-weight: 700;
+    font-size: 1.5rem;
+    line-height: 2rem;
+  }
+
+  .activities {
+    width: 70%;
+  }
+
+  .activities h2 {
+    font-size: 2rem;
+  }
+
+  .activities .activities-list {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+
+  .activities-list .list-item {
+    flex-basis: 20%;
+  }
+
+  .memberships h2 {
+    font-size: 2rem;
+  }
+
+  .member-type h3 {
+    font-size: 1.5rem;
+  }
+
+  .member-benefits {
+    font-size: 1rem;
+    line-height: 1.4rem;
+    font-weight: 600;
+  }
+
+  .member-type img {
+    margin-right: 15px;
+    margin-top: 15px;
+  }
+}
+
+@media screen and (min-width:768px) {
+  .contact-personal-info {
+    width: 80%;
+    margin: 0;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .main section {
+    width: 90%;
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+
+  .line-division {
+    margin-left: 5%;
+    width: 90%;
+    background: #373867;
+    border: 2px solid #373867;
+  }
+
+  .health-info-section {
+    align-items: flex-start;
+    margin-bottom: 70px;
+  }
+
+  .health-content {
+    flex-direction: row;
+  }
+
+  .health-content p {
+    order: 0;
+    padding: 2.5rem 0;
+  }
+
+  .health-content img {
+    width: 60%;
+  }
+
+  .help-guide-section {
+    justify-content: unset;
+    height: 54rem;
+    margin-top: 40px;
+    margin-bottom: 65px;
+  }
+
+  .help-guide-section h2 {
+    width: auto;
+    margin-top: 7.75rem;
+    margin-bottom: 5.93rem;
+  }
+
+  .help-guide-section .content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    max-width: 60rem;
+    height: 30rem;
+    margin: 0;
+  }
+
+  .help-guide-section .content .btn {
+    margin: 0;
+  }
+
+  .contact-section {
+    margin-bottom: 24px;
+  }
+
+  .contact-section .container {
+    justify-content: flex-start;
+  }
+
+  .contact-section .label {
+    margin-left: 0;
+    font-size: 1.5rem;
+    line-height: 2rem;
+  }
+
+  .contact-form button {
+    margin-left: 0;
+  }
+
+  .contact-personal-info {
+    width: 60%;
+  }
+
+  .contact-reason {
+    margin-top: 30px;
+  }
+
+  .contact-reason h3 {
+    margin-left: 0;
+    font-size: 1.5rem;
+  }
+
+  .contact-message textarea {
+    width: 80%;
+    margin: 0;
+  }
+
+  .history-section {
+    margin-bottom: 5rem;
+    margin-top: 40px;
+  }
+
+  .history-section .content {
+    min-height: 765px;
+    background-image: url('../img/girl-fit-no-blur.png');
+    background-size: cover;
+  }
+
+  .history-section .content p {
+    padding: 9rem;
+    font-size: 1.875rem;
+  }
+
+  .history-section h2 {
+    text-align: start;
+    margin-bottom: 25px;
+  }
+
+  .activity-member-section {
+    flex-direction: row;
+    align-items: unset;
+    justify-content: center;
+  }
+
+  .activities {
+    width: 50%;
+    align-items: start;
+  }
+
+  .activities h2, .memberships h2 {
+    font-size: 2.5rem;
+  }
+
+  .activities .activities-list {
+    flex-wrap: nowrap;
+  }
+
+  .list-item img {
+    width: 128px;
+    height: 118px;
+  }
+
+  .list-item span {
+    margin-left: 5rem;
+    font-size: 1.8rem;
+  }
+
+  .memberships h2 {
+    color: #000;
+  }
+
+  .member-type {
+    margin-bottom: 7rem;
+  }
+
+  .member-type img {
+    width: 46px;
+    height: 46px;
+    margin-top: 30px;
+    margin-right: 40px;
+  }
+
+  .content-type h3 {
+    font-size: 1.8rem;
+  }
+
+  .content-type ul {
+    font-size: 1.20rem;
+  }
+}
