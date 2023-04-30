@@ -100,7 +100,9 @@ var validateForm = function(form) {
         return response.json()
       })
       .then(data => {
-        if(!data.success) {
+        if(data.success) {
+          showModalMsg('Request successful!', data.msg);
+        } else {
           if(data.msg) {
             throw new Error(data.msg)
           }
@@ -109,16 +111,41 @@ var validateForm = function(form) {
             msg += '\n' + error.msg;
           });
           throw new Error(msg);
-        } else {
-          alert('Request successful! \n' + data.msg);
         }
       })
       .catch(error => {
-        alert(error.message);
+        showModalMsg('Something went wrong', error.message);
       })
       alert('Nice you got it \n' + message);
     }
   })
 }
+
+var crossModalClose = document.querySelector('.modal-close');
+var modal = document.querySelector('#modal-msg');
+var btnModalClose = modal.querySelector('#btn-ok');
+
+crossModalClose.addEventListener('click', function() {
+  modal.style.display = 'none';
+})
+
+btnModalClose.addEventListener('click', function() {
+  modal.style.display = 'none';
+})
+
+window.onclick = function(event) {
+  if(event.target === modal) {
+    modal.style.display = 'none';
+  }
+}
+
+function showModalMsg(title, msg) {
+  var modalTitle = modal.querySelector('.modal-title > p');
+  var content = modal.querySelector('#modal-details');
+  modal.style.display = 'block';
+  modalTitle.innerText = title;
+  content.innerText = msg;
+}
+
 
 validateForm('#login-form');
