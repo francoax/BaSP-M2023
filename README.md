@@ -46,7 +46,7 @@ We developed the Log In and Sign Up of the application, with validations on Java
 ## Week 07
 This week we learned about Asynchronous Javascript like callbacks and promises and fetch requests.
 
-[GitHub-Page](https://francoax.github.io/BaSP-M2023/Week-06/views/index.html)
+[GitHub-Page](https://francoax.github.io/BaSP-M2023/Week-07/views/index.html)
 ## Authors
 - Franco Duarte
 

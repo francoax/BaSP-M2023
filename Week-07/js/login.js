@@ -92,7 +92,31 @@ var validateForm = function(form) {
         var label = formGroups[i].querySelector('.form-label').textContent;
         message += label.trim() + ': ' + input + '\n';
       }
-      alert('Nice, you got it: \n' + message);
+      var email = formElement.querySelector('#email').value;
+      var pass = formElement.querySelector('#password').value;
+
+      fetch('https://api-rest-server.vercel.app/login?email=' + email + '&password=' + pass)
+      .then(response => {
+        return response.json()
+      })
+      .then(data => {
+        if(!data.success) {
+          if(data.msg) {
+            throw new Error(data.msg)
+          }
+          let msg = '';
+          data.errors.forEach(error => {
+            msg += '\n' + error.msg;
+          });
+          throw new Error(msg);
+        } else {
+          alert('Request successful! \n' + data.msg);
+        }
+      })
+      .catch(error => {
+        alert(error.message);
+      })
+      alert('Nice you got it \n' + message);
     }
   })
 }
