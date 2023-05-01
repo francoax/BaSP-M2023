@@ -96,30 +96,33 @@ var validateForm = function(form) {
       var pass = formElement.querySelector('#password').value;
 
       fetch('https://api-rest-server.vercel.app/login?email=' + email + '&password=' + pass)
-      .then(response => {
+      .then(function(response) {
         return response.json()
       })
-      .then(data => {
+      .then(function(data) {
         if(data.success) {
           showModalMsg('Request successful!', data.msg);
         } else {
           if(data.msg) {
-            throw new Error(data.msg)
+            showModalMsg('Something went wrong', data.msg);
+          } else {
+            showModalMsg('Something went wrong', data.errors[0].msg);
           }
-          let msg = '';
-          data.errors.forEach(error => {
-            msg += '\n' + error.msg;
-          });
-          throw new Error(msg);
         }
       })
-      .catch(error => {
-        showModalMsg('Something went wrong', error.message);
+      .catch(function(error) {
+        alert(error);
       })
       alert('Nice you got it \n' + message);
     }
   })
 }
+
+window.onload = function() {
+  document.querySelector('#email').value = localStorage.getItem('email');
+  document.querySelector('#password').value = localStorage.getItem('password');
+}
+
 
 var crossModalClose = document.querySelector('.modal-close');
 var modal = document.querySelector('#modal-msg');
@@ -132,12 +135,6 @@ crossModalClose.addEventListener('click', function() {
 btnModalClose.addEventListener('click', function() {
   modal.style.display = 'none';
 })
-
-window.onclick = function(event) {
-  if(event.target === modal) {
-    modal.style.display = 'none';
-  }
-}
 
 function showModalMsg(title, msg) {
   var modalTitle = modal.querySelector('.modal-title > p');

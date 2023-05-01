@@ -382,8 +382,13 @@ var validateForm = function(form) {
         return response.json()
       })
       .then(function(data) {
+        var msg = '';
         if(data.success) {
-          showModalMsg('Successful request!', data.msg);
+          msg = data.msg;
+          for(var property in data.data) {
+            msg+= '\n' + property.toUpperCase() + ': ' + data.data[property];
+          }
+          showModalMsg('Successful request!', msg);
           localStorage.setItem('name', name);
           localStorage.setItem('lastname', lastname);
           localStorage.setItem('dni', dni);
@@ -393,8 +398,8 @@ var validateForm = function(form) {
           localStorage.setItem('city', city);
           localStorage.setItem('zip', zip);
           localStorage.setItem('email', email);
+          localStorage.setItem('password', password);
         } else {
-          let msg = '';
           data.errors.forEach(function(error) {
             msg += error.msg + '\n';
           })
@@ -411,7 +416,7 @@ var validateForm = function(form) {
 
 validateForm('#sign-up-form');
 
-window.onload = () => {
+window.onload = function() {
   document.querySelector('#name').value = localStorage.getItem('name');
   document.querySelector('#lastname').value = localStorage.getItem('lastname');
   document.querySelector('#dni').value = localStorage.getItem('dni');
@@ -421,6 +426,7 @@ window.onload = () => {
   document.querySelector('#city').value = localStorage.getItem('city');
   document.querySelector('#postal-code').value = localStorage.getItem('zip');
   document.querySelector('#email').value = localStorage.getItem('email');
+  document.querySelector('#password').value = localStorage.getItem('password');
 }
 
 var crossModalClose = document.querySelector('.modal-close');
@@ -434,12 +440,6 @@ crossModalClose.addEventListener('click', function(event) {
 btnModalClose.addEventListener('click', function(event) {
   modal.style.display = 'none';
 })
-
-window.onclick = function(event) {
-  if(event.target === modal) {
-    modal.style.display = 'none';
-  }
-}
 
 function showModalMsg(title, msg) {
   var modalTitle = modal.querySelector('.modal-title > p');
